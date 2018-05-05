@@ -1,0 +1,18 @@
+[33mcommit dea5d032700ca4bb9adb8ece97fdfca5cec5713b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: emirpalm <emirpalm@outlook.com>
+Date:   Tue Apr 24 16:46:03 2018 -0500
+
+    cambios
+
+[1mdiff --git a/src/app/app.module.ts b/src/app/app.module.ts[m
+[1mindex 8e738f4..2bddbf1 100644[m
+[1m--- a/src/app/app.module.ts[m
+[1m+++ b/src/app/app.module.ts[m
+[36m@@ -15,6 +15,7 @@[m [mimport { PagesComponent } from './pages/pages.component';[m
+ // Importar HttpClientModule[m
+ import {HttpClientModule} from '@angular/common/http';[m
+ [m
+[32m+[m
+ @NgModule({[m
+   declarations: [[m
+     AppComponent[m

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;EAKE;ACLF;;;;;EAKE;AAQF,gBAAgB;AAiBhB,mBAAmB;AAcnB,gBAAgB;AAsChB,gBAAgB;AAQhB,kBAAkB;ADlFlB;;kEAEkE;AAG9D;8BACmB;EACf,KAAK,ECoEL,OAAO;EDnEP;uCAAS;IACL,OAAO,EAAE,GAAG;AAGpB,uDAA0C;EACtC,KAAK,EAAE,wBAAwB;;AAIvC,WAAY;EACR,aAAa,EAAE,GAAG",
+"sources": ["breadcrumb-page.scss","../variable.scss"],
+"names": [],
+"file": "breadcrumb-page.css"
+}
