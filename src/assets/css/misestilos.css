@@ -252,6 +252,19 @@ SECCION TU MEJOR ELECCIÓN
   margin: 0 auto;
   display: block; }
 
+.certificados img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  color: #fff; }
+
+.certificados .certificacion {
+  background: #0088C4;
+  color: #fff; }
+
+.certificados .certificacion .txt-center {
+  color: #fff; }
+
 /*-------------------------------
 SECCION SERVICIOS
 --------------------------------*/

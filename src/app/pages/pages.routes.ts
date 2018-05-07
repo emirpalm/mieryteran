@@ -10,6 +10,8 @@ import { BolsatrabajoComponent } from './bolsatrabajo/bolsatrabajo.component';
 // tslint:disable-next-line:max-line-length
 import { ImportacionesyexportacionesComponent } from './paginas-servicios/importacionesyexportaciones/importacionesyexportaciones.component';
 import { LogisticaComponent } from './paginas-servicios/logistica/logistica.component';
+import { AsesoriaComponent } from './paginas-servicios/asesoria/asesoria.component';
+import { InformacionComponent } from './paginas-servicios/informacion/informacion.component';
 
 
 
@@ -23,8 +25,10 @@ const pagesRoutes: Routes = [
         {path: 'servicios', component: ServiciosComponent},
         {path: 'contacto', component: ContactoComponent},
         {path: 'bolsatrabajo', component: BolsatrabajoComponent},
+        {path: 'asesoria', component: AsesoriaComponent},
         {path: 'importacionesyexportaciones', component: ImportacionesyexportacionesComponent},
         {path: 'logistica', component: LogisticaComponent},
+        {path: 'informacion', component: InformacionComponent},
         {path: '', redirectTo: '/home', pathMatch: 'full'}
         ]
     }

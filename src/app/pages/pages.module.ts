@@ -15,6 +15,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // tslint:disable-next-line:max-line-length
 import { ImportacionesyexportacionesComponent } from './paginas-servicios/importacionesyexportaciones/importacionesyexportaciones.component';
 import { LogisticaComponent } from './paginas-servicios/logistica/logistica.component';
+import { AsesoriaComponent } from './paginas-servicios/asesoria/asesoria.component';
+import { InformacionComponent } from './paginas-servicios/informacion/informacion.component';
 
 
 
@@ -26,8 +28,10 @@ declarations: [
     ServiciosComponent,
     ContactoComponent,
     BolsatrabajoComponent,
+    AsesoriaComponent,
     ImportacionesyexportacionesComponent,
-    LogisticaComponent
+    LogisticaComponent,
+    InformacionComponent
 
 ],
 exports: [
@@ -36,8 +40,10 @@ exports: [
     ServiciosComponent,
     ContactoComponent,
     BolsatrabajoComponent,
+    AsesoriaComponent,
     ImportacionesyexportacionesComponent,
-    LogisticaComponent
+    LogisticaComponent,
+    InformacionComponent
 
 ],
 imports: [
