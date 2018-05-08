@@ -11,15 +11,18 @@ import { DASHBOARD_ROUTES } from './dashboard.routes';
 // Modulos dashboard
 import { DashboardComponent } from './dashboard.component';
 import { CrearboletinComponent } from './crearboletin/crearboletin.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // Fin modulos
 
 import { FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
     declarations: [
         DashboardComponent,
-        CrearboletinComponent
+        CrearboletinComponent,
+        AccountSettingsComponent
 
     ],
     exports: [

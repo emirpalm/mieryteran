@@ -37,7 +37,7 @@ export class SettingsService {
 
 
     // tslint:disable-next-line:prefer-const
-    let url = `/assets/css/colors/${ tema }.css`;
+    let url = `assets/css/colors/${ tema }.css`;
     this._document.getElementById('tema').setAttribute('href', url );
 
     this.ajustes.tema = tema;
