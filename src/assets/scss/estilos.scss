@@ -79,7 +79,6 @@ html {
 
 // BODY
 body {
-    font-family: 'Open Sans', sans-serif;
     color: $texto;
 }
 
@@ -533,6 +532,10 @@ ESTILOS PAGINA NOSOTROS
 .paginas-internas .panel .panel-heading a:hover {
     background: $secundario;
     color: #fff;
+}
+
+.paginas-internas b {
+    font-weight: bold;
 }
 
 

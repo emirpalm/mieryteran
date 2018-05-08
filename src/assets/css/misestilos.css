@@ -59,7 +59,6 @@ html {
   font-size: 15px; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
   color: #111111; }
 
 .bienvenidos {
@@ -423,6 +422,9 @@ ESTILOS PAGINA NOSOTROS
 .paginas-internas .panel .panel-heading a:hover {
   background: #221F73;
   color: #fff; }
+
+.paginas-internas b {
+  font-weight: bold; }
 
 /*-------------------------------------------
 ESTILOS PAGINA SERVICIOS
