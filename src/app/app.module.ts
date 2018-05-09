@@ -14,13 +14,14 @@ import { PagesModules } from './pages/pages.module';
 import { DashboardModules } from './dashboard/dashboard.module';
 // FIn modulos
 
-// paginas login y pagenofound
+// paginas login
 import { LoginComponent } from './login/login/login.component';
-// fin paginas login y pagenofound
+// fin paginas login
 
 // Servicios
 import { ServiceModule } from './services/service.module';
 // Fin Servicios
+
 
 @NgModule({
   declarations: [
