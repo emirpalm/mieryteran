@@ -9,6 +9,7 @@ export class SidebarService {
       icono: 'mdi mdi-gauge',
       submenu: [
         { titulo: 'CrearBoletin', url: 'crearboletin' },
+        { titulo: 'Promesas', url: 'promesas' },
       ]
     }
   ];

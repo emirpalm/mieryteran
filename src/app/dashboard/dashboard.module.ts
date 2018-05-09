@@ -16,6 +16,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 // Fin modulos
 
 import { FormsModule } from '@angular/forms';
+import { PromesasComponent } from './promesas/promesas.component';
 
 
 
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     declarations: [
         DashboardComponent,
         CrearboletinComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent
 
     ],
     exports: [
