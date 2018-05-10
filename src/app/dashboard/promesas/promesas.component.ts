@@ -25,10 +25,12 @@ export class PromesasComponent implements OnInit {
 
   contarTres(): Promise<boolean> {
 
+    // tslint:disable-next-line:no-shadowed-variable
     return new Promise( (resolve, reject) => {
 
     let contador = 0;
 
+    // tslint:disable-next-line:prefer-const
     let intervalo = setInterval( () => {
 
       contador += 1;
