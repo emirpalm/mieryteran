@@ -3,6 +3,7 @@ import { DashboardComponent } from './dashboard.component';
 import { CrearboletinComponent } from './crearboletin/crearboletin.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -12,6 +13,7 @@ const dashboardRoutes: Routes = [
     {path: 'crearboletin', component: CrearboletinComponent, data: {titulo: 'Crear Boletines'}},
     {path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Configuración'}},
     {path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'}},
+    {path: 'rxjs', component: RxjsComponent, data: {titulo: 'RXJS'}},
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
     ]
 }

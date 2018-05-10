@@ -10,6 +10,7 @@ export class SidebarService {
       submenu: [
         { titulo: 'CrearBoletin', url: 'crearboletin' },
         { titulo: 'Promesas', url: 'promesas' },
+        { titulo: 'RXJS', url: 'rxjs' },
       ]
     }
   ];
