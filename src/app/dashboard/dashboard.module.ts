@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 // Modulos Shared headerdash, sidebar y breadcrumbs
 import { SharedModule } from '../shared/shared.module';
 // Fin modulos Shared headerdash, sidebar y breadcrumbs
-
+import { CommonModule } from '@angular/common';
 
 // Rutas
 import { DASHBOARD_ROUTES } from './dashboard.routes';
@@ -15,9 +15,10 @@ import { CrearboletinComponent } from './crearboletin/crearboletin.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // Fin modulos
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -27,7 +28,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         CrearboletinComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        RegisterComponent
 
     ],
     exports: [
@@ -36,7 +38,9 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     imports: [
         SharedModule,
         DASHBOARD_ROUTES,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule,
+        CommonModule
     ]
 
     })

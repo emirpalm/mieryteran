@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from '../../services/service.index';
 
 @Component({
   selector: 'app-headerdash',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderdashComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _usuarioService: UsuarioService) { }
 
   ngOnInit() {
   }

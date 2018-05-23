@@ -22,6 +22,8 @@ import { LoginComponent } from './login/login/login.component';
 import { ServiceModule } from './services/service.module';
 // Fin Servicios
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ServiceModule } from './services/service.module';
     APP_ROUTES,
     PagesModules,
     DashboardModules,
-    ServiceModule
+    ServiceModule,
+    FormsModule,
+    ReactiveFormsModule,
 
   ],
   providers: [],

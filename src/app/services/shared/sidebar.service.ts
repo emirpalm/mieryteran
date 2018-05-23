@@ -8,7 +8,8 @@ export class SidebarService {
       titulo: 'Principal',
       icono: 'mdi mdi-gauge',
       submenu: [
-        { titulo: 'CrearBoletin', url: 'crearboletin' },
+        { titulo: 'Crear Boletin', url: 'crearboletin' },
+        { titulo: 'Registrar Usuarios', url: 'register' },
         { titulo: 'Promesas', url: 'promesas' },
         { titulo: 'RXJS', url: 'rxjs' },
       ]

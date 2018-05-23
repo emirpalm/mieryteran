@@ -17,9 +17,6 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { BolsatrabajoComponent } from './bolsatrabajo/bolsatrabajo.component';
 // Fin Componentes pages
 
-import { FormsModule } from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
 // paginas internas servicios
 // tslint:disable-next-line:max-line-length
 import { ImportacionesyexportacionesComponent } from './paginas-servicios/importacionesyexportaciones/importacionesyexportaciones.component';
@@ -58,9 +55,7 @@ exports: [
 ],
 imports: [
     SharedModule,
-    PAGES_ROUTES,
-    FormsModule,
-    [BrowserAnimationsModule],
+    PAGES_ROUTES
 ]
 
 })
