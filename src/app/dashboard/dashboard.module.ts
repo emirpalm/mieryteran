@@ -11,6 +11,7 @@ import { DASHBOARD_ROUTES } from './dashboard.routes';
 
 // Modulos dashboard
 import { DashboardComponent } from './dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
 import { CrearboletinComponent } from './crearboletin/crearboletin.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // Fin modulos
@@ -24,6 +25,7 @@ import { PipesModule } from '../pipes/pipes.module';
 
 
 
+
 @NgModule({
     declarations: [
         DashboardComponent,
@@ -31,7 +33,8 @@ import { PipesModule } from '../pipes/pipes.module';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        RegisterComponent
+        RegisterComponent,
+        ProfileComponent
 
     ],
     exports: [

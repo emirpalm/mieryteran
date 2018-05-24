@@ -81,4 +81,19 @@ export class UsuarioService {
      });
 
    }
+
+   actulizarUsuario(usuario: Usuario) {
+     // tslint:disable-next-line:prefer-const
+     let url = URL_SERVICIOS + '/usuario/' + usuario._id;
+     url += '?token=' + this.token;
+
+     return this.http.put(url,usuario)
+     .map((resp: any) => {
+         // tslint:disable-next-line:prefer-const
+       let usuarioDB: Usuario = resp.usuario;
+       this.guardarStorage(usuarioDB._id, this.token, usuarioDB);
+       swal('Datos Actuzalizados!', usuario.nombre , 'success');
+       return true;
+     });
+   }
 }
