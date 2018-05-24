@@ -7,6 +7,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginGuardGuard } from '../services/service.index';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -20,6 +21,8 @@ const dashboardRoutes: Routes = [
     {path: 'profile', component: ProfileComponent, data: {titulo: 'Mi perfil'}},
     {path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'}},
     {path: 'rxjs', component: RxjsComponent, data: {titulo: 'RXJS'}},
+    // Mantenimientos
+    {path: 'usuarios', component: UsuariosComponent, data: {titulo: 'Mantenimiento de usuarios'}},
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'}
     ]
 }

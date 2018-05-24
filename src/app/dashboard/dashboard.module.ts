@@ -22,6 +22,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { RegisterComponent } from './register/register.component';
 // Pipes Modulos
 import { PipesModule } from '../pipes/pipes.module';
+import { UsuariosComponent } from './usuarios/usuarios.component';
 
 
 
@@ -34,7 +35,8 @@ import { PipesModule } from '../pipes/pipes.module';
         PromesasComponent,
         RxjsComponent,
         RegisterComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent
 
     ],
     exports: [
