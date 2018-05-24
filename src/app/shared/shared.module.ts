@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderdashComponent } from './headerdash/headerdash.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { PipesModule } from '../pipes/pipes.module';
 // Fin Componentes Shared
 
 
@@ -17,7 +18,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 @NgModule({
     imports: [
         RouterModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ],
 declarations: [
     NopagefoundComponent,

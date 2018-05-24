@@ -19,6 +19,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { RegisterComponent } from './register/register.component';
+// Pipes Modulos
+import { PipesModule } from '../pipes/pipes.module';
 
 
 
@@ -40,7 +42,8 @@ import { RegisterComponent } from './register/register.component';
         DASHBOARD_ROUTES,
         FormsModule,
         ReactiveFormsModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ]
 
     })
