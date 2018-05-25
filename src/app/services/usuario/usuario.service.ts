@@ -108,6 +108,7 @@ export class UsuarioService {
        this.usuario.img = resp.usuario.img;
        swal('Imagen Actuzalizados!', this.usuario.nombre , 'success');
        this.guardarStorage(id, this.token, this.usuario);
+       this.cargarStorage();
      })
      .catch(resp => {
        console.log(resp);

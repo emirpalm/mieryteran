@@ -38,7 +38,7 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let usuario of usuarios">
-                            <td class=".w70"><img [src]="usuario.img | imagen" class="img-50 img-circle"></td>
+                            <td class=".w70"><img [src]="usuario.img | imagen" class="img-50 img-circle pointer"></td>
                             <td>{{usuario.email}}</td>
                             <td>{{usuario.nombre}}</td>
                             <td>
@@ -49,25 +49,25 @@
                                 </select>
                             </td>
                             <td>
-                                <button (click)="guardarUsuario(usuario)" class="btn-primary">
-                            <i class="fas fa-save"></i>
-                            </button>
+                                <button (click)="guardarUsuario(usuario)" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                </button>
 
-                                <button (click)="borrarUsuario(usuario)" class="btn-danger">
-                              <i class="fas fa-trash"></i>
-                            </button>
+                                <button (click)="borrarUsuario(usuario)" class="btn btn-danger">
+                                <i class="fas fa-trash"></i>
+                                </button>
                             </td>
                         </tr>
                     </tbody>
 
                 </table>
 
-                <button (click)="cambiarDesde(-5)" class="btn-primary">
+                <button (click)="cambiarDesde(-5)" class="btn btn-secondary">
                     <i class="fas fa-angle-left"></i> Anteriores
                   </button>
-                <button (click)="cambiarDesde(5)" class="btn-secondary">
+                <button (click)="cambiarDesde(5)" class="btn btn-secondary">
                       Siguientes <i class="fas fa-angle-right"></i>
-                    </button>
+                </button>
 
             </div>
         </div>

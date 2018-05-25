@@ -70,6 +70,7 @@ console.log(desde);
     console.log(usuario);
     if (usuario._id === this._usuarioService.usuario._id) {
     swal('Error!', 'No se puede borrar a si mismo' , 'error');
+    return;
     }
     swal({
       title: '¿Esta seguro?',
