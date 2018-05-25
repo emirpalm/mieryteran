@@ -3,6 +3,8 @@ import { Usuario } from '../../models/usuarios.model';
 import { URL_SERVICIOS } from '../../config/config';
 import { UsuarioService } from '../../services/service.index';
 
+declare var swal: any;
+
 @Component({
   selector: 'app-usuarios',
   templateUrl: './usuarios.component.html',
@@ -62,6 +64,31 @@ console.log(desde);
       this.cargando = false;
 
     });
+  }
+
+  borrarUsuario(usuario: Usuario) {
+    console.log(usuario);
+    if (usuario._id === this._usuarioService.usuario._id) {
+    swal('Error!', 'No se puede borrar a si mismo' , 'error');
+    }
+    swal({
+      title: '¿Esta seguro?',
+      text: 'Esta apunto de borrar a ' + usuario.nombre,
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+      })
+      .then(borrar => {
+        if (borrar) {
+          this._usuarioService.borrarUsuario(usuario._id)
+          .subscribe(borrado => {
+            console.log(borrado);
+            this.cargarUsuarios();
+          });
+
+        }
+      });
+
   }
 
 }

@@ -125,4 +125,14 @@ export class UsuarioService {
     return this.http.get(url)
     .map((resp: any) => resp.usuarios);
   }
+
+  borrarUsuario(id: string) {
+    let url = URL_SERVICIOS + '/usuario/' + id;
+    url += '?token=' + this.token;
+    return this.http.delete(url)
+    .map(resp => {
+      swal('Usuario borrado!', 'El usuario a sido borrado correctamente' , 'success');
+      return true;
+    });
+  }
 }
