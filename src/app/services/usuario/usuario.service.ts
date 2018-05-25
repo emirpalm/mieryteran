@@ -92,10 +92,12 @@ export class UsuarioService {
 
      return this.http.put(url, usuario)
      .map((resp: any) => {
-         // tslint:disable-next-line:prefer-const
-       let usuarioDB: Usuario = resp.usuario;
-       this.guardarStorage(usuarioDB._id, this.token, usuarioDB);
-       swal('Datos Actuzalizados!', usuario.nombre , 'success');
+       if (usuario._id === this.usuario._id) {
+          // tslint:disable-next-line:prefer-const
+          let usuarioDB: Usuario = resp.usuario;
+          this.guardarStorage(usuarioDB._id, this.token, usuarioDB);
+       }
+      swal('Datos Actuzalizados!', usuario.nombre , 'success');
        return true;
      });
    }

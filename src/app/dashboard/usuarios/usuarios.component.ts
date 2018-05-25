@@ -91,4 +91,12 @@ console.log(desde);
 
   }
 
+  guardarUsuario(usuario: Usuario) {
+    this._usuarioService.actulizarUsuario(usuario)
+    .subscribe(resp => {
+      this.cargarUsuarios();
+    });
+
+  }
+
 }
