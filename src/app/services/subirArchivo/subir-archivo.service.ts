@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
-import { reject } from 'q';
 import { URL_SERVICIOS } from '../../config/config';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class SubirArchivoService {
 
   constructor() { }

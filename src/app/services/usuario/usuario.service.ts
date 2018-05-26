@@ -6,9 +6,7 @@ import { Router } from '@angular/router';
 import { SubirArchivoService } from '../subirArchivo/subir-archivo.service';
 import { arch } from 'os';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class UsuarioService {
   usuario: Usuario;
   token: string;
