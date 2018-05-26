@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuarios.model';
 import { URL_SERVICIOS } from '../../config/config';
 import { UsuarioService } from '../../services/service.index';
+import { ModalUploadService } from '../../components/modal-upload/modal-upload.service';
 
 declare var swal: any;
 
@@ -19,10 +20,16 @@ export class UsuariosComponent implements OnInit {
    // tslint:disable-next-line:no-inferrable-types
   cargando: boolean = true;
 
-  constructor(public _usuarioService: UsuarioService) { }
+  constructor(public _usuarioService: UsuarioService, public _modalUploadSevice: ModalUploadService) { }
 
   ngOnInit() {
     this.cargarUsuarios();
+    this._modalUploadSevice.notification
+    .subscribe(resp => this.cargarUsuarios());
+  }
+
+  mostarModal(id: string) {
+    this._modalUploadSevice.mostrarModal('usuarios', id);
   }
 
   cargarUsuarios() {
@@ -40,7 +47,7 @@ export class UsuariosComponent implements OnInit {
   cambiarDesde(valor: number) {
     // tslint:disable-next-line:prefer-const
     let desde = this.desde + valor;
-console.log(desde);
+    console.log(desde);
     if (desde >= this.totalRegistros) {
       return;
     }

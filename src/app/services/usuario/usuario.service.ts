@@ -97,7 +97,7 @@ export class UsuarioService {
           let usuarioDB: Usuario = resp.usuario;
           this.guardarStorage(usuarioDB._id, this.token, usuarioDB);
        }
-      swal('Datos Actuzalizados!', usuario.nombre , 'success');
+       swal('Datos Actuzalizados!', usuario.nombre , 'success');
        return true;
      });
    }
@@ -108,7 +108,6 @@ export class UsuarioService {
        this.usuario.img = resp.usuario.img;
        swal('Imagen Actuzalizados!', this.usuario.nombre , 'success');
        this.guardarStorage(id, this.token, this.usuario);
-       this.cargarStorage();
      })
      .catch(resp => {
        console.log(resp);

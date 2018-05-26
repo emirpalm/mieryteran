@@ -23,8 +23,7 @@ import { RegisterComponent } from './register/register.component';
 // Pipes Modulos
 import { PipesModule } from '../pipes/pipes.module';
 import { UsuariosComponent } from './usuarios/usuarios.component';
-
-
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 @NgModule({
@@ -36,7 +35,8 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
         RxjsComponent,
         RegisterComponent,
         ProfileComponent,
-        UsuariosComponent
+        UsuariosComponent,
+        ModalUploadComponent
 
     ],
     exports: [
