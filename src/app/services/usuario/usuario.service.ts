@@ -93,7 +93,7 @@ export class UsuarioService {
        if (usuario._id === this.usuario._id) {
           // tslint:disable-next-line:prefer-const
           let usuarioDB: Usuario = resp.usuario;
-          this.guardarStorage(usuarioDB._id, this.token, usuarioDB);
+          this.guardarStorage(usuarioDB._id, this.token, this.usuario);
        }
        swal('Datos Actuzalizados!', usuario.nombre , 'success');
        return true;
