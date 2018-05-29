@@ -147,18 +147,18 @@
 
 <section class="ultimos-proyectos p-y-1">
     <div class="container">
-        <h2 class="text-xs-center font-weight-bold">Boletines</h2>
+        <h2 class="text-xs-center font-weight-bold">Boletines( <small> {{_boletinesService.totalBoletines}} </small> )</h2>
 
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div *ngFor="let boletin of boletines" class="list-group">
+            <a [href]="boletin.pdf | imagen:'boletin'" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">El agente aduanal ¿nace o se hace?</h5>
+                    <h5 class="mb-1">{{boletin.titulo}}</h5>
                     <small>25/07/2018</small>
                 </div>
-                <p class="mb-1">Conocimientos que debe dominar un agente aduanal en México.</p>
+                <p class="mb-1">{{boletin.descripcion}}</p>
                 <small>Donec id elit non mi porta.</small>
             </a>
-            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">¿Qué es un arancel preferencial?</h5>
                     <small class="text-muted">25/07/2017</small>
@@ -173,7 +173,7 @@
                 </div>
                 <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 <small class="text-muted">Donec id elit non mi porta.</small>
-            </a>
+            </a>-->
         </div>
     </div>
 </section>

@@ -40,7 +40,6 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
 
     ],
     exports: [
-        CrearboletinComponent
     ],
     imports: [
         SharedModule,

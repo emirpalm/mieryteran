@@ -1,3 +1,4 @@
+export { BoletinesService } from './Boletines/boletines.service';
 export { LoginGuardGuard } from './guards/login-guard.guard';
 
 export { SubirArchivoService } from './subirArchivo/subir-archivo.service';

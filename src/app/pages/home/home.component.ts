@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Boletin } from '../../models/boletines.models';
+import { BoletinesService } from '../../services/service.index';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class HomeComponent implements OnInit {
+  boletines: Boletin[] = [];
 
-  constructor() { }
+  constructor(public _boletinesService: BoletinesService) { }
 
   ngOnInit() {
+    this.cargarBoletines();
   }
-
+  cargarBoletines() {
+    this._boletinesService.cargarBoletines()
+    .subscribe(boletines => this.boletines = boletines );
+  }
 }

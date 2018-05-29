@@ -25,7 +25,9 @@ import { AsesoriaComponent } from './paginas-servicios/asesoria/asesoria.compone
 import { InformacionComponent } from './paginas-servicios/informacion/informacion.component';
 // fin paginas internas servicios
 
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PipesModule } from '../pipes/pipes.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
 declarations: [
@@ -55,7 +57,11 @@ exports: [
 ],
 imports: [
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    FormsModule,
+    ReactiveFormsModule,
+    PipesModule,
+    CommonModule
 ]
 
 })

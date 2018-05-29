@@ -9,7 +9,8 @@ import {
   SharedService,
   UsuarioService,
   SubirArchivoService,
-  LoginGuardGuard
+  LoginGuardGuard,
+  BoletinesService
  } from './service.index';
 
 
@@ -26,7 +27,8 @@ import {
     UsuarioService,
     SubirArchivoService,
     LoginGuardGuard,
-    ModalUploadService
+    ModalUploadService,
+    BoletinesService
   ],
   declarations: []
 })
