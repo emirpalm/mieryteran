@@ -22,8 +22,8 @@ export class ImagenPipe implements PipeTransform {
 
       break;
 
-      case 'boletin':
-      url += '/boletines/' + img;
+      case 'usuario2':
+      url += '/usuarios2/' + img;
 
       break;
 

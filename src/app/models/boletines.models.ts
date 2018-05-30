@@ -4,7 +4,8 @@ export class Boletin {
         public titulo: string,
         public descripcion: string,
         public password: string,
-        public pdf?: string
+        public pdf?: string,
+        public _id?: string
 
     ) {}
 }

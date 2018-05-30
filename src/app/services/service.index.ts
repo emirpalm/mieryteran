@@ -1,3 +1,4 @@
+export { SubirPdfService } from './subirArchivo/subir-pdf.service';
 export { BoletinesService } from './Boletines/boletines.service';
 export { LoginGuardGuard } from './guards/login-guard.guard';
 

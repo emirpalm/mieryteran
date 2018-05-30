@@ -1,3 +1,4 @@
+import { ModalUploadPDFService } from '../components/modaluploadpdf/modaluploadpdf.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
@@ -10,7 +11,8 @@ import {
   UsuarioService,
   SubirArchivoService,
   LoginGuardGuard,
-  BoletinesService
+  BoletinesService,
+  SubirPdfService
  } from './service.index';
 
 
@@ -28,7 +30,9 @@ import {
     SubirArchivoService,
     LoginGuardGuard,
     ModalUploadService,
-    BoletinesService
+    ModalUploadPDFService,
+    BoletinesService,
+    SubirPdfService
   ],
   declarations: []
 })

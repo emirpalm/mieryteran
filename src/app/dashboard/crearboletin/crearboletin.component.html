@@ -34,7 +34,8 @@
                     <tbody>
                         <tr *ngFor="let boletin of boletines">
                             <td>
-                                <a class="fas fa-file-pdf fa-2x" [href]="boletin.pdf | imagen:'boletin'"></a>
+                                <a class="fas fa-file-pdf fa-2x" [href]="boletin.pdf | pdf:'boletin'"></a>
+                                <h3 (click)="mostarModal(boletin._id)">Subir PDF</h3>
                             </td>
                             <td>{{boletin.titulo}}</td>
                             <td>{{boletin.descripcion}}</td>

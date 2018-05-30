@@ -24,6 +24,8 @@ import { RegisterComponent } from './register/register.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { ModaluploadpdfComponent } from '../components/modaluploadpdf/modaluploadpdf.component';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
         RegisterComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent
+        ModalUploadComponent,
+        ModaluploadpdfComponent
 
     ],
     exports: [
