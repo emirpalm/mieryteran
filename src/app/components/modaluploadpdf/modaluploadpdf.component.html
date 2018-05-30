@@ -10,13 +10,13 @@
                 </div>
                 <div class="modal-body text-center">
                     <img *ngIf="!pdfTemp" [src]="'xxx' | pdf" class="w150">
-                    <img *ngIf="pdfTemp" [src]="pdfTemp" class="w150">
+                    <!-- <img *ngIf="pdfTemp" [src]="pdfTemp" class="w150">-->
                     <input (change)="seleccionPDF($event.target.files[0])" type="file" #inputFile>
 
                 </div>
                 <div class="modal-footer">
                     <button (click)="cerrarModal()" type="button" class="btn btn-secondary">Cerrar</button>
-                    <button (click)="subirImagen()" [disabled]="!imagenTemp" type="button" class="btn btn-primary">Subir imagen</button>
+                    <button (click)="subirPDF()" [disabled]="!pdfTemp" type="button" class="btn btn-primary">Subir PDF</button>
                 </div>
             </div>
         </div>

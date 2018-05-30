@@ -35,7 +35,7 @@ export class SubirPdfService {
     };
 
     // tslint:disable-next-line:prefer-const
-    let url = URL_SERVICIOS + '/upload/' + tipo + '/' + id;
+    let url = URL_SERVICIOS + '/uploadPDF/' + tipo + '/' + id;
 
     xhr.open('put', url , true);
     xhr.send(formData);

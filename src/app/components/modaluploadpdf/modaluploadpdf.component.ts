@@ -31,7 +31,7 @@ export class ModaluploadpdfComponent implements OnInit {
       this._modalUploadPDFService.ocultarModal();
     }
 
-    subirImagen() {
+    subirPDF() {
       this.clearForm();
       this._subirPDFService.subirPDF(this.pdfSubir, this._modalUploadPDFService.tipo, this._modalUploadPDFService.id)
       .then(resp => {
@@ -52,8 +52,8 @@ export class ModaluploadpdfComponent implements OnInit {
         this.pdfSubir = null;
         return;
       }
-      if (archivo.type.indexOf('image') < 0) {
-        swal('Solo imagenes', 'El archivo seleccionado no es una imagen', 'error');
+      if (archivo.type.indexOf('pdf') < 0) {
+        swal('Solo Archivos PDF', 'El archivo seleccionado no es un PDF', 'error');
         this.pdfSubir = null;
         return;
 
@@ -62,7 +62,7 @@ export class ModaluploadpdfComponent implements OnInit {
          // tslint:disable-next-line:prefer-const
          let reader = new FileReader();
          // tslint:disable-next-line:prefer-const
-         let urlImagenTemp = reader.readAsDataURL(archivo);
+         let urlPdfTemp = reader.readAsDataURL(archivo);
          reader.onloadend = () => this.pdfTemp = reader.result;
     }
 
