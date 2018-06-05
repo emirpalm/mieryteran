@@ -12,7 +12,7 @@ import { DASHBOARD_ROUTES } from './dashboard.routes';
 // Modulos dashboard
 import { DashboardComponent } from './dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CrearboletinComponent } from './crearboletin/crearboletin.component';
+import { BoletinesComponent } from './boletines/boletines.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // Fin modulos
 
@@ -31,7 +31,7 @@ import { ModaluploadpdfComponent } from '../components/modaluploadpdf/modaluploa
 @NgModule({
     declarations: [
         DashboardComponent,
-        CrearboletinComponent,
+        BoletinesComponent,
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,

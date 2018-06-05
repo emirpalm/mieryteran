@@ -23,4 +23,11 @@ export class BoletinesService {
         });
     }
 
+    buscarBoletines(termino: string) {
+        // tslint:disable-next-line:prefer-const
+        let url = URL_SERVICIOS + '/busqueda/collection/boletines/' + termino;
+        return this.http.get(url)
+        .map((resp: any) => resp.boletines);
+      }
+
 }

@@ -1,6 +1,6 @@
 import {RouterModule, Routes} from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
-import { CrearboletinComponent } from './crearboletin/crearboletin.component';
+import { BoletinesComponent } from './boletines/boletines.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
@@ -15,7 +15,7 @@ const dashboardRoutes: Routes = [
     component: DashboardComponent, data: {titulo: 'Dashboard'},
     canActivate: [LoginGuardGuard],
     children: [
-    {path: 'crearboletin', component: CrearboletinComponent, data: {titulo: 'Crear Boletines'}},
+    {path: 'boletines', component: BoletinesComponent, data: {titulo: 'Boletines'}},
     {path: 'register', component: RegisterComponent, data: {titulo: 'Registrar Usuarios'}},
     {path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Configuración'}},
     {path: 'profile', component: ProfileComponent, data: {titulo: 'Mi perfil'}},

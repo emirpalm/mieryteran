@@ -5,11 +5,11 @@ import { BoletinesService } from '../../services/service.index';
 import { ModalUploadPDFService } from '../../components/modaluploadpdf/modaluploadpdf.service';
 
 @Component({
-  selector: 'app-crearboletin',
-  templateUrl: './crearboletin.component.html',
+  selector: 'app-boletines',
+  templateUrl: './boletines.component.html',
   styles: []
 })
-export class CrearboletinComponent implements OnInit {
+export class BoletinesComponent implements OnInit {
   forma: FormGroup;
   boletines: Boletin[] = [];
 
@@ -21,7 +21,14 @@ export class CrearboletinComponent implements OnInit {
   mostarModal(id: string) {
     this._modalUploadPDFSevice.mostrarModal('boletines', id);
   }
-  buscarBoletin() {}
+  buscarBoletin(termino: string) {
+    if (termino.length <= 0 ) {
+      this.cargarBoletines();
+      return;
+    }
+    this._boletinesService.buscarBoletines(termino)
+    .subscribe(boletin => this.boletines = boletin);
+  }
   crearBoletin() {}
   cargarBoletines() {
     this._boletinesService.cargarBoletines()
