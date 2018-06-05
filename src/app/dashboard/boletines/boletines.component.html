@@ -16,7 +16,7 @@
             <div class="card-body">
 
                 <div class="text-right">
-                    <button (click)="crearBoletin()" type="button" class="btn waves-effect waves-light btn-rounded btn-primary">
+                    <button [routerLink]="['/dashboard/boletin', 'nuevo']" type="button" class="btn waves-effect waves-light btn-rounded btn-primary">
                               <i class="fa fa-plus"></i> 
                               Crear Boletin
                     </button>
@@ -28,6 +28,8 @@
                             <th>Archivo</th>
                             <th>Titulo</th>
                             <th>Descripción</th>
+                            <th>Autor</th>
+                            <th>Fecha de Publicación</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -39,7 +41,16 @@
                             </td>
                             <td>{{boletin.titulo}}</td>
                             <td>{{boletin.descripcion}}</td>
-                            <td></td>
+                            <td>{{boletin.fechapublicado}}</td>
+                            <td>
+                                <button [routerLink]="['/dashboard/boletin', boletin._id]" class="btn btn-primary">
+                                    <i class="fas fa-edit"></i>
+                                    </button>
+
+                                <button (click)="borrarBoletin(boletin)" class="btn btn-danger">
+                                    <i class="fas fa-trash"></i>
+                                    </button>
+                            </td>
                         </tr>
                     </tbody>
 

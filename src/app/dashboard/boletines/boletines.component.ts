@@ -18,9 +18,11 @@ export class BoletinesComponent implements OnInit {
   ngOnInit() {
     this.cargarBoletines();
   }
+
   mostarModal(id: string) {
     this._modalUploadPDFSevice.mostrarModal('boletines', id);
   }
+
   buscarBoletin(termino: string) {
     if (termino.length <= 0 ) {
       this.cargarBoletines();
@@ -29,7 +31,16 @@ export class BoletinesComponent implements OnInit {
     this._boletinesService.buscarBoletines(termino)
     .subscribe(boletin => this.boletines = boletin);
   }
-  crearBoletin() {}
+
+  crearBoletin() {
+
+  }
+
+  borrarBoletin(boletin: Boletin) {
+    this._boletinesService.borrarBoletin(boletin._id)
+    .subscribe(() => this.cargarBoletines());
+  }
+
   cargarBoletines() {
     this._boletinesService.cargarBoletines()
     .subscribe(boletines => this.boletines = boletines );

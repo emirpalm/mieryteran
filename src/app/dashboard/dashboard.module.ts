@@ -13,6 +13,7 @@ import { DASHBOARD_ROUTES } from './dashboard.routes';
 import { DashboardComponent } from './dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoletinesComponent } from './boletines/boletines.component';
+import { BoletinComponent } from './boletines/boletin.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // Fin modulos
 
@@ -32,6 +33,7 @@ import { ModaluploadpdfComponent } from '../components/modaluploadpdf/modaluploa
     declarations: [
         DashboardComponent,
         BoletinesComponent,
+        BoletinComponent,
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,

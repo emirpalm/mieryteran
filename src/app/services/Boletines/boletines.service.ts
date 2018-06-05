@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../../config/config';
+import { UsuarioService } from '../usuario/usuario.service';
+import { Boletin } from '../../models/boletines.models';
 
 @Injectable()
 export class BoletinesService {
@@ -8,7 +10,8 @@ export class BoletinesService {
     // tslint:disable-next-line:no-inferrable-types
     totalBoletines: number = 0;
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient,
+    public _usuarioService: UsuarioService) {
 
     }
 
@@ -29,5 +32,29 @@ export class BoletinesService {
         return this.http.get(url)
         .map((resp: any) => resp.boletines);
       }
+
+    borrarBoletin(id: string) {
+        // tslint:disable-next-line:prefer-const
+        let url = URL_SERVICIOS + '/boletin/' + id;
+        url += '?token=' + this._usuarioService.token;
+
+        return this.http.delete(url)
+        .map(resp => {
+            swal('Boletin Borrado', 'Boletin Borrado Correctamente', 'success');
+            return resp;
+        });
+    }
+
+    guardarBoletin(boletin: Boletin) {
+        // tslint:disable-next-line:prefer-const
+        let url = URL_SERVICIOS + '/boletin/';
+        url += '?token=' + this._usuarioService.token;
+
+        return this.http.post(url, boletin)
+        .map((resp: any) => {
+            swal('Boletin Creado', 'Boletin Creado Correctamente', 'success');
+            return resp.boletin;
+        });
+    }
 
 }
