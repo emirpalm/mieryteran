@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import { Location, PopStateEvent } from '@angular/common';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-pages',
@@ -12,7 +13,9 @@ export class PagesComponent implements OnInit {
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
 
-  constructor(private router: Router, private location: Location) { }
+  constructor(private router: Router, private location: Location, private translate: TranslateService) {
+      translate.setDefaultLang('en');
+   }
 
   ngOnInit() {
       this.location.subscribe((ev: PopStateEvent) => {

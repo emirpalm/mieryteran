@@ -1,0 +1,13 @@
+{
+    "home": {
+        "titulo": "Mier Y Terán Agencia Aduanal",
+        "lema": "90 Años Trabajando Rápido, Legal, Y Sin Fronteras",
+        "btncontacto": "Ponte en contacto"
+    },
+    "menuheader": {
+        "inicio": "Inicio",
+        "nosotros": "Nosotros",
+        "servicios": "Servicios",
+        "contacto": "Contacto"
+    }
+}

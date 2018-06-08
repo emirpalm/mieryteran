@@ -29,6 +29,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PipesModule } from '../pipes/pipes.module';
 import { CommonModule } from '@angular/common';
 
+// NG-TRANSLATE
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 @NgModule({
 declarations: [
     PagesComponent,
@@ -61,8 +66,20 @@ imports: [
     FormsModule,
     ReactiveFormsModule,
     PipesModule,
-    CommonModule
+    CommonModule,
+    TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+                  useFactory: HttpLoaderFactory,
+                  deps: [HttpClient]
+        }
+      })
 ]
 
 })
 export class PagesModules {}
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+  }

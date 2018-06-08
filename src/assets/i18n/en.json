@@ -1,0 +1,13 @@
+{
+    "home": {
+        "titulo": "Mier Y Terán Customs Broker",
+        "lema": "90 Years of Working Fast, Legal, and Without Borders",
+        "btncontacto": "Contac Us"
+    },
+    "menuheader": {
+        "inicio": "Home",
+        "nosotros": "About us",
+        "servicios": "services",
+        "contacto": "Contac us"
+    }
+}

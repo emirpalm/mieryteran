@@ -12,6 +12,11 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { PipesModule } from '../pipes/pipes.module';
 // Fin Componentes Shared
 
+// NG-TRANSLATE
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -19,7 +24,14 @@ import { PipesModule } from '../pipes/pipes.module';
     imports: [
         RouterModule,
         CommonModule,
-        PipesModule
+        PipesModule,
+        TranslateModule.forRoot({
+            loader: {
+              provide: TranslateLoader,
+                      useFactory: HttpLoaderFactory,
+                      deps: [HttpClient]
+            }
+          })
     ],
 declarations: [
     NopagefoundComponent,
@@ -41,3 +53,8 @@ exports: [
 })
 
 export class SharedModule {}
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+  }
+

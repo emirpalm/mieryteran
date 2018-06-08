@@ -38,7 +38,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardModules,
     ServiceModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
