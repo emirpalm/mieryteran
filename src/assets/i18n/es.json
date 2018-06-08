@@ -1,6 +1,6 @@
 {
     "home": {
-        "titulo": "Mier Y Terán Agencia Aduanal",
+        "titulo": "Mier y Terán Agencia Aduanal",
         "lema": "90 Años Trabajando Rápido, Legal, Y Sin Fronteras",
         "btncontacto": "Ponte en contacto"
     },
@@ -9,5 +9,12 @@
         "nosotros": "Nosotros",
         "servicios": "Servicios",
         "contacto": "Contacto"
+    },
+    "seccion": {
+        "parrafo": "En Mier y Terán Agencia Aduanal contamos con el personal especializado, con la experiencia y capacitación al día para atender sus necesidades en materia de comercio Exterior."
+    },
+    "seccioneleccion": {
+        "porque": "¿Porque somos",
+        "mejoreleccion": "tu mejor elección?"
     }
 }

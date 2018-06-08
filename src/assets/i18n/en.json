@@ -1,6 +1,6 @@
 {
     "home": {
-        "titulo": "Mier Y Terán Customs Broker",
+        "titulo": "Mier y Terán Customs Agency",
         "lema": "90 Years of Working Fast, Legal, and Without Borders",
         "btncontacto": "Contac Us"
     },
@@ -9,5 +9,13 @@
         "nosotros": "About us",
         "servicios": "services",
         "contacto": "Contac us"
+    },
+    "seccion": {
+        "parrafo": "In Mier y Terán Customs Agency we have a specialized staff, with the experience and the up-to-date training to meet your needs in foreign trade matters."
+    },
+    "seccioneleccion": {
+        "porque": "¿Why are we",
+        "mejoreleccion": "your best choice?"
     }
+
 }
