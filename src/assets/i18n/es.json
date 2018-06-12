@@ -15,6 +15,38 @@
     },
     "seccioneleccion": {
         "porque": "¿Porque somos",
-        "mejoreleccion": "tu mejor elección?"
+        "mejoreleccion": "tu mejor elección?",
+        "respuesta": "Porque hemos estado en el mercado desde el 1934 entregando servicios a una gran cantidad de clientes satisfechos.",
+        "rastreo": "RASTREO Y CONSULTA EN LINEA.",
+        "drastreo": "Rastreo Satelital",
+        "certificado": "CERTIFICACION INTERNACIONAL ISO 9001 - 2015.",
+        "dcertificado": "Somos una empresa certificada bajo normas internacionales en nuestros procesos de 'Servicios Aduanales de Importacion y Exportacion'.",
+        "integrador": "INTEGRADOR DE SERVICIOS DE COMERCIO EXTERIOR.",
+        "dintegrador": "Somos un Grupo de Empresas que ofrece la integración de todos los servicios que forman la cadena de Comercio Exterior, que garantizan a nuestros clientes, reducción de tiempos y costos.",
+        "seguridad": "SEGURIDAD JURIDICA Y ADUANERA.",
+        "dseguridad": "Brindamos todo el respaldo jurídico que garantiza la tranquilidad de sus clientes.",
+        "infraestructuta": "INFRAESTRUCTURA FÍSICA Y HUMANA.",
+        "dinfraestructuta": "Contamos con modernas Instalaciones, tecnología de punta y personal capacitado para ofrecer nuestros servicios de manera ágil y profesional.",
+        "web": "ACCESO A NUESTRA APLICACIÓN",
+        "dweb": "Acceso a nuestros clientes."
+    },
+    "servicios": {
+        "titulo": "Nuestros Servicios",
+        "asesoria": "Asesoría",
+        "dasesoria": "Asesoría jurídica y de comercio exterior antes, durante y después del despacho.",
+        "ie": "Importaciones y Exportaciones",
+        "die": "Recepción y expedición de embarques desde o hacia puerto progreso o el aeropuerto internacional de mérida.",
+        "logistica": "Logística",
+        "dlogistica": "Coordinación de fletes internacionales, consolidación de carga..",
+        "idigital": "Información Digital",
+        "didigital": "Informes completos de embarques, pedimentos y cuentas de gastos en línea.",
+        "moreinfo": "Más información"
+    },
+    "boletines": {
+        "titulo": "Boletines"
+    },
+    "footer": {
+        "derechos": "Todos los derechos reservados",
+        "aviso": "aviso de privacidad"
     }
 }

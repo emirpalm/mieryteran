@@ -15,7 +15,39 @@
     },
     "seccioneleccion": {
         "porque": "¿Why are we",
-        "mejoreleccion": "your best choice?"
+        "mejoreleccion": "your best choice?",
+        "respuesta": "Because we have been in the market since 1934 delivering services to a large number of satisfied customers.",
+        "rastreo": "TRACK AND ONLINE CONSULTATION.",
+        "drastreo": "Satellite tracking",
+        "certificado": "INTERNATIONAL CERTIFICATION ISO 9001 - 2015.",
+        "dcertificado": "We are a company certified under international standards in our processes of 'Customs Services of Import and Export'.",
+        "integrador": "INTEGRATOR OF FOREIGN TRADE SERVICES.",
+        "dintegrador": "We are a group of companies that offer the integration of all the services that make up the chain of Foreign Trade, which guarantee our customers, reduction of time and costs.",
+        "seguridad": "LEGAL AND CUSTOMS SECURITY.",
+        "dseguridad": "We provide all the legal support that guarantees the peace of your customers.",
+        "infraestructuta": "PHYSICAL AND HUMAN INFRASTRUCTURE.",
+        "dinfraestructuta": "We have modern facilities, cutting edge technology and trained personnel to offer our services in an agile and professional manner.",
+        "web": "APP ACCESS",
+        "dweb": "Access to our customers."
+    },
+    "servicios": {
+        "titulo": "Services",
+        "asesoria": "Advisory",
+        "dasesoria": "Legal advice and foreign trade before, during and after the dispatch.",
+        "ie": "Imports and Exports",
+        "die": "Reception and shipment of shipments from or to Puerto Progreso or the international airport of Mérida.",
+        "logistica": "Logistics",
+        "dlogistica": "Coordination of international freight, load consolidation ..",
+        "idigital": "Digital Information",
+        "didigital": "Complete reports of shipments, pedimentos and online expense accounts.",
+        "moreinfo": "More information"
+    },
+    "boletines": {
+        "titulo": "Newsletters"
+    },
+    "footer": {
+        "derechos": "All rights reserved",
+        "aviso": "notice of privacy"
     }
 
 }
