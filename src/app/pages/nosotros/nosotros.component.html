@@ -3,8 +3,8 @@
         <div class="texto-encabezado text-xs-center">
 
             <div class="container">
-                <h1 class="display-4">Nosotros</h1>
-                <p class="wow bounceIn" data-wow-delay=".3s">¿Quienes somos? y ¿Que hacemos?.</p>
+                <h1 class="display-4">{{ 'nosotros.titulo' | translate }}</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">{{ 'nosotros.subtitulo' | translate }}</p>
 
             </div>
 
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-right">
-                    <a routerLink="/home">Inicio</a> » Nosotros
+                    <a routerLink="/home">{{ 'menuheader.inicio' | translate }}</a> » {{ 'menuheader.nosotros' | translate }}
 
                 </div>
             </div>
@@ -26,28 +26,16 @@
         <div class="container">
             <div class="row">
                 <article class="col-md-8">
-                    <h2><b>Agencia Aduanal Mier y Terán</b></h2>
-                    <p>
-                        <b>Don Manuel Mier y Terán Cabrera</b>, de origen campechano, es el fundador de las Empresas <b>Mier y Terán</b>, sinónimo de servicio al comercio exterior.
-                    </p>
-                    <p>Emigró a Progreso por el año de <b>1910</b> cuando el puerto tenía un gran movimiento comercial. </p>
-
-                    <p>Después de trabajar en diferentes compañías relacionadas con el transporte marítimo, tanto nacional como extranjero, expedición de carga como: <b>Monte</b>, <b>Lejeune y Cía</b>., <b>Ward line</b>., Etc., Nació la primera Empresa <b>Mier
-                        y Terán</b> en el ramo de agencia de buques, comerciante y comisionista, denominada <b>Manuel Mier y Terán y Cía</b>., en <b>1934</b> en el puerto de Progreso. </p>
-
-                    <p>Posteriormente en <b>1936</b> la empresa se dividió en dos ramas: <b>Manuel Mier y Terán agencia de buques y comisionista</b> y <b>Joaquín Mier y Terán agente aduanal</b> (hermano de Don Manuel). </p>
+                    <h2><b>{{ 'home.titulo' | translate }}</b></h2>
+                    <p [innerHTML]="'nosotros.parrafo1' | translate"></p>
 
                     <aside class="manuelmyt col-md-4">
                         <img src="assets/images/nosotros/mier-y-teran-agencia-aduanal.jpg" alt="Nosotros">
                     </aside>
-                    <p>Ambas empresas trabajaron coordinadamente con una sola <b>visión</b> y una sola <b>misión</b>: <b>el servicio al comercio exterior tanto al transporte, despacho aduanal, manejo y reexpedición de mercancía hasta final destino</b>. </p>
+                    <p [innerHTML]="'nosotros.parrafo2' | translate"></p>
 
-                    <p>Durante el tiempo en que no hubo comunicación terrestre entre la Península de Yucatán y el centro del país, se creó una empresa de transporte tipo exprés, de Yucatán y Campeche a Veracruz y Tampico con destino final la Ciudad de México
-                        y ciudades de mayor comercio en el altiplano.</p>
-
-                    <h2><b>Filosofía Organizacional</b></h2>
-                    <p>En Mier y Terán la misión, visión, los valores, elemento diferenciador y la política de Calidad forman parte de un solo concepto al que llamamos “Filosofía Organizacional”. Estos enunciados cumplen con lo que solicita la Norma, son
-                        la base de los objetivos y deben ser entendidos y aplicados por todo el personal:</p>
+                    <h2><b>{{ 'nosotros.filosofia' | translate }}</b></h2>
+                    <p [innerHTML]="'nosotros.contenidof' | translate"></p>
 
 
 
@@ -56,14 +44,11 @@
                         <div class="panel panel-default">
 
                             <h4 class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#tab-mision"> MISIÓN </a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#tab-mision">{{ 'nosotros.mision' | translate }}</a>
 
                             </h4>
                             <div id="tab-mision" class="panel-collapse collapse in">
-                                <p>
-                                    Prestar servicios de despacho aduanal de tráfico aéreo y marítimo y asesoría a la comunidad exportadora e importadora de manera ágil y precisa, para contribuir al desarrollo de nuestra empresa y a la expansión de las actividades comerciales de nuestros
-                                    clientes, a través de un servicio de calidad apegado al marco legal vigente.
-                                </p>
+                                <p [innerHTML]="'nosotros.contenidom' | translate"></p>
 
                             </div>
                         </div>
@@ -72,13 +57,11 @@
                         <div class="panel panel-default">
                             <h4 class="panel-heading">
 
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-vision">VISIÓN</a>
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-vision">{{ 'nosotros.vision' | translate }}</a>
 
                             </h4>
                             <div id="tab-vision" class="panel-collapse collapse">
-                                <p>
-                                    Ser la organización que presta las mejores soluciones aduanales dentro del marco legal integrando el servicio de operador logístico.
-                                </p>
+                                <p [innerHTML]="'nosotros.contenidov' | translate"></p>
                             </div>
                         </div>
 
@@ -86,56 +69,22 @@
                         <div class="panel panel-default">
                             <h4 class="panel-heading">
 
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-valores">VALORES</a>
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-valores">{{ 'nosotros.valores' | translate }}</a>
 
                             </h4>
                             <div id="tab-valores" class="panel-collapse collapse">
-                                <p>
-                                    1. Honestidad
-                                </p>
-                                <p>
-                                    2.- Responsabilidad
-                                </p>
-                                <p>
-                                    3.- Lealtad/Confidencialidad
-                                </p>
-                                <p>
-                                    4.- Eficiencia
-                                </p>
-                                <p>
-                                    5.- Claridad
-                                </p>
-                                <p>
-                                    6.- Seguridad legal
-                                </p>
-                                <p>
-                                    7.- Calidad
-                                </p>
-                                <p>
-                                    8.- Espíritu de servicio
-                                </p>
-                                <p>
-                                    9.- Rapidez
-                                </p>
-                                <p>
-                                    10.- Profesionalismo.
-                                </p>
-
-
+                                <p [innerHTML]="'nosotros.contenidova' | translate"></p>
                             </div>
                         </div>
 
                         <div class="panel panel-default">
                             <h4 class="panel-heading">
 
-                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-politicas">POLÍTICA DE CALIDAD</a>
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#tab-politicas">{{ 'nosotros.politica' | translate }}</a>
 
                             </h4>
                             <div id="tab-politicas" class="panel-collapse collapse">
-                                <p>
-                                    En la Agencia Aduanal Mier y Terán ofrecemos servicios de comercio exterior con oportunidad y excelente nivel de calidad a nuestros clientes y partes interesadas. Lo anterior dentro del marco legal vigente, apegado a nuestros valores y al compromiso de
-                                    mejorar continuamente.
-                                </p>
+                                <p [innerHTML]="'nosotros.contenidop' | translate"></p>
                             </div>
                         </div>
 
@@ -143,12 +92,12 @@
 
                 </article>
                 <aside class="nosotrosmyt col-md-4">
-                    <h2><b>Patentes</b></h2>
+                    <h2><b>{{ 'nosotros.patentes' | translate }}</b></h2>
                     <p>3814 A.A. Bernardo Mier y Terán Gutiérrez
                     </p>
                     <p>1756 A.A. Pamela Mier y Terán Díaz
                     </p>
-                    <h2><b>Nuestros Directivos</b></h2>
+                    <h2><b>{{ 'nosotros.directivos' | translate }}</b></h2>
                     <p><img src="assets/images/nosotros/bernardo-mier-y-teran-agencia-aduanal.jpg" alt="Nosotros">
                     </p>
                     <p><img src="assets/images/nosotros/gerardo-mier-y-teran.jpg" alt="Nosotros">
@@ -163,7 +112,7 @@
     <section class="certificados">
         <div class="container">
 
-            <h2 class="h3 text-xs-center font-weight-bold">Certificados <span></span></h2>
+            <h2 class="h3 text-xs-center font-weight-bold">{{ 'nosotros.certificados' | translate }} <span></span></h2>
 
             <div class="row">
 
@@ -174,11 +123,8 @@
                                 <img src="assets/images/certificados/ISO_GLOBAL.jpg" alt="">
                             </div>
                             <h2 class="txt-center">
-                                Estamos certificados en ISO 9001:2015 </h2>
-                            <p class="txt-justify">
-                                Esta es una norma internacional, la cual se centra en todos los elementos de administración de calidad, con los que una empresa debe contar para tener un sistema efectivo que le permita administrar y mejorar la calidad de sus productos o servicios. Al
-                                seguir estos estándares, nos permite mejorar la capacidad de nuestras operaciones con el fin satisfacer las necesidades y cumplir expectativas de nuestros clientes, esto como garantía del alto nivel de servicio que brindamos,demostrando
-                                así que nuestra organización sigue los principios de gestión de calidad internacionalmente reconocidos mejorando continuamente nuestros procesos. </p>
+                                {{ 'nosotros.tituloc' | translate }}</h2>
+                            <p class="txt-justify" [innerHTML]="'nosotros.contenidoc' | translate"></p>
                         </div>
                     </div>
                 </div>
