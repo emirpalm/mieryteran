@@ -26,6 +26,7 @@ import { PipesModule } from '../pipes/pipes.module';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 import { ModaluploadpdfComponent } from '../components/modaluploadpdf/modaluploadpdf.component';
+import { EmbarquesComponent } from './embarques/embarques.component';
 
 
 
@@ -41,7 +42,8 @@ import { ModaluploadpdfComponent } from '../components/modaluploadpdf/modaluploa
         ProfileComponent,
         UsuariosComponent,
         ModalUploadComponent,
-        ModaluploadpdfComponent
+        ModaluploadpdfComponent,
+        EmbarquesComponent
 
     ],
     exports: [

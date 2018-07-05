@@ -1,0 +1,43 @@
+export class Embarque {
+
+    constructor(
+        public IdPedimento: Number,
+        public pedimento: Number,
+        public IdPatente: Number,
+        public Patente: Number,
+        public Year: Number,
+        public Remesa: Number,
+        public CvePedimento: string,
+        public TipoPedimento: string,
+        public Cliente: string,
+        public ImportExport: string,
+        public IdCarga: Number,
+        public TipoCarga: string,
+        public Guia: string,
+        public contenedor: string,
+        public Sello: string,
+        public Observaciones: string,
+        public Viaje: string,
+        public FArribo: Date,
+        public Buque: string,
+        public IdDoda: Number,
+        public NoIntegracion: Number,
+        public IdSeccion: Number,
+        public CveSeccion: string,
+        public seccion: string,
+        public IdAduana: Number,
+        public cveAduana: Number,
+        public aduana: string,
+        public COVE: Number,
+        public Placa: Number,
+        public IdTramite: Number,
+        public FechaTramite: Date,
+        public Rojo1: Number,
+        public Liberado1: Number,
+        public Rojo2: Number,
+        public Liberado2: Number,
+        public Liberado: Date,
+        public Deposito: Number
+
+    ) {}
+}

@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginGuardGuard } from '../services/service.index';
 import { ProfileComponent } from './profile/profile.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { EmbarquesComponent } from './embarques/embarques.component';
 
 const dashboardRoutes: Routes = [
     {
@@ -26,7 +27,9 @@ const dashboardRoutes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     // web_role
     {path: 'boletines', component: BoletinesComponent, data: {titulo: 'Boletines'}},
-    {path: 'boletin/:id', component: BoletinComponent, data: {titulo: 'Boletin'}}
+    {path: 'boletin/:id', component: BoletinComponent, data: {titulo: 'Boletin'}},
+    // Client_Role
+    {path: 'embarque', component: EmbarquesComponent, data: {titulo: 'Embarque'}},
     ]
 }
 ];

@@ -20,6 +20,13 @@ export class SidebarService {
       submenu: [
         { titulo: 'Usuarios', url: 'usuarios' }
       ]
+    },
+    {
+      titulo: 'Clientes',
+      icono: 'mdi mdi-folder-lock-open',
+      submenu: [
+        { titulo: 'Embarques', url: 'embarque' }
+      ]
     }
   ];
 

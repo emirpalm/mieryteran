@@ -12,6 +12,7 @@ import {
   SubirArchivoService,
   LoginGuardGuard,
   BoletinesService,
+  EmbarquesService,
   SubirPdfService
  } from './service.index';
 
@@ -32,6 +33,7 @@ import {
     ModalUploadService,
     ModalUploadPDFService,
     BoletinesService,
+    EmbarquesService,
     SubirPdfService
   ],
   declarations: []
