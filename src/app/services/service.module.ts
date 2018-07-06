@@ -13,7 +13,8 @@ import {
   LoginGuardGuard,
   BoletinesService,
   EmbarquesService,
-  SubirPdfService
+  SubirPdfService,
+  ScriptService
  } from './service.index';
 
 
@@ -34,7 +35,8 @@ import {
     ModalUploadPDFService,
     BoletinesService,
     EmbarquesService,
-    SubirPdfService
+    SubirPdfService,
+    ScriptService
   ],
   declarations: []
 })

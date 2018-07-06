@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Embarque } from '../../models/embarques.model';
 import { EmbarquesService } from '../../services/service.index';
+import { ScriptService } from '../../services/scritpt/script.service';
 
 @Component({
   selector: 'app-embarques',
@@ -19,7 +20,7 @@ export class EmbarquesComponent implements OnInit {
    // tslint:disable-next-line:no-inferrable-types
   cargando: boolean = true;
 
-  constructor(public _embarqueService: EmbarquesService) { }
+  constructor(public _embarqueService: EmbarquesService, public _scriptService: ScriptService) { }
 
   ngOnInit() {
     this.cargarEmbarques();
@@ -32,8 +33,6 @@ export class EmbarquesComponent implements OnInit {
       this.embarques = resp.embarques;
       this.cargando = false;
     });
-
-
   }
 
   cambiarDesde(valor: number) {
