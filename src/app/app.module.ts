@@ -23,6 +23,8 @@ import { ServiceModule } from './services/service.module';
 // Fin Servicios
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -38,7 +40,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardModules,
     ServiceModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
 
   ],
   providers: [],

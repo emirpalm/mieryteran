@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ScriptService } from '../services/scritpt/script.service';
 
 declare function init_plugins();
+declare function init_plugins2();
+declare function init_plugins3();
 
 @Component({
   selector: 'app-dashboard',
@@ -10,13 +12,12 @@ declare function init_plugins();
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(public _scriptService: ScriptService) { }
+  constructor() { }
 
   ngOnInit() {
     init_plugins();
-    this._scriptService.load('footable').then(data => {
-      console.log('script loaded ', data);
-  }).catch(error => console.log(error));
+    init_plugins2();
+    init_plugins3();
   }
 
 }

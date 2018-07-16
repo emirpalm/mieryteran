@@ -20,7 +20,7 @@ export class EmbarquesComponent implements OnInit {
    // tslint:disable-next-line:no-inferrable-types
   cargando: boolean = true;
 
-  constructor(public _embarqueService: EmbarquesService, public _scriptService: ScriptService) { }
+  constructor(public _embarqueService: EmbarquesService /*public _scriptService: ScriptService*/) { }
 
   ngOnInit() {
     this.cargarEmbarques();
