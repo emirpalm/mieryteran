@@ -115,6 +115,11 @@ function init_plugins() {
         $(function() {
             $('#sidebarnav').AdminMenu();
         });
+        // ============================================================== 
+        // Accordion Footable
+        // ============================================================== 
+
+
 
         // ============================================================== 
         // Perfact scrollbar
@@ -131,8 +136,6 @@ function init_plugins() {
         $(".list-task li label").click(function() {
             $(this).toggleClass("task-done");
         });
-
-
 
         // ============================================================== 
         // Collapsable cards

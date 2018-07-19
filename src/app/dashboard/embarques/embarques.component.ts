@@ -3,6 +3,7 @@ import { Embarque } from '../../models/embarques.model';
 import { EmbarquesService } from '../../services/service.index';
 import { ScriptService } from '../../services/scritpt/script.service';
 
+declare var jQuery: any;
 @Component({
   selector: 'app-embarques',
   templateUrl: './embarques.component.html',
@@ -32,7 +33,9 @@ export class EmbarquesComponent implements OnInit {
       this.totalRegistros = resp.total;
       this.embarques = resp.embarques;
       this.cargando = false;
-    });
+      jQuery(function($) {
+        $('.table').footable(); });
+      });
   }
 
   cambiarDesde(valor: number) {
@@ -51,7 +54,16 @@ export class EmbarquesComponent implements OnInit {
   }
 
   buscarEmbarque(termino: string) {
-
+    if (termino.length <= 0) {
+      this.cargarEmbarques();
+      return;
+    }
+    this.cargando = true;
+    this._embarqueService.buscarEmbarque(termino)
+    .subscribe((embarques: Embarque[]) => {
+      this.embarques = embarques;
+      this.cargando = false;
+    });
   }
 
 }
