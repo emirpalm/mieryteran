@@ -7,12 +7,10 @@ import { Embarque } from '../../models/embarques.model';
 @Injectable()
 export class EmbarquesService {
 
-    // tslint:disable-next-line:no-inferrable-types
-    totalEmbarques: number = 0;
-
     constructor(private http: HttpClient) {
 
     }
+
 
     cargarEmbarques(id: number = 643, desde: number = 0) {
          // tslint:disable-next-line:prefer-const

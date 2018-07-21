@@ -39,6 +39,7 @@ export class UsuariosComponent implements OnInit {
       this.totalRegistros = resp.total;
       this.usuarios = resp.usuarios;
       this.cargando = false;
+      console.log(this.totalRegistros);
     });
 
 

@@ -33,6 +33,7 @@ export class EmbarquesComponent implements OnInit {
       this.totalRegistros = resp.total;
       this.embarques = resp.embarques;
       this.cargando = false;
+      console.log(this.totalRegistros);
       jQuery(function($) {
         $('.table').footable(); });
       });
