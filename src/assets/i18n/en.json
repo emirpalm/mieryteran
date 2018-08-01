@@ -1,7 +1,7 @@
 {
     "home": {
         "titulo": "Mier y Terán Customs Agency",
-        "lema": "90 Years of Working Fast, Legal, and Without Borders",
+        "lema": "Years of Working Fast, Legal, and Without Borders",
         "btncontacto": "Contac Us"
     },
     "menuheader": {
@@ -47,7 +47,8 @@
     },
     "footer": {
         "derechos": "All rights reserved",
-        "aviso": "notice of privacy"
+        "aviso": "Privacy notice",
+        "reporte": "Report a problem with the site"
     },
     "nosotros": {
         "titulo": "Us",

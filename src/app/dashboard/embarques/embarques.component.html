@@ -28,23 +28,24 @@
                 <table class="table table-hover color-bordered-table info-bordered-table" data-filtering="true">
                     <thead>
                         <tr>
-                            <th data-breakpoints="xs">Pedimento</th>
-                            <th>Cliente</th>
+                            <th>Pedimento</th>
+                            <th data-breakpoints="xs" data-title="Guia">Guia</th>
+                            <th data-breakpoints="xs" data-title="Contenedor">Contenedor</th>
+                            <th data-breakpoints="xs" data-title="Viaje">Viaje</th>
+                            <th data-breakpoints="xs" data-title="Buque">Buque</th>
+                            <th data-breakpoints="xs" data-title="Liberado">Liberado</th>
                             <th>FechaTramite</th>
-                            <th data-breakpoints="xs">Tipo de Pedimento</th>
-                            <th data-breakpoints="xs sm">Patente</th>
+                            <th data-breakpoints="all" data-title="Cliente">Cliente</th>
+                            <th data-breakpoints="all" data-title="Tipo de Pedimento">Tipo de Pedimento</th>
+                            <th data-breakpoints="all" data-title="Patente">Patente</th>
                             <th data-breakpoints="all" data-title="Año">Año</th>
                             <th data-breakpoints="all" data-title="Remesa">Remesa</th>
                             <th data-breakpoints="all" data-title="CvePedimento">CvePedimento</th>
                             <th data-breakpoints="all" data-title="ImportExport">ImportExport</th>
                             <th data-breakpoints="all" data-title="TipoCarga">TipoCarga</th>
-                            <th data-breakpoints="all" data-title="Guia">Guia</th>
-                            <th data-breakpoints="all" data-title="Contenedor">Contenedor</th>
                             <th data-breakpoints="all" data-title="Sello">Sello</th>
                             <th data-breakpoints="all" data-title="Observaciones">Observaciones</th>
-                            <th data-breakpoints="all" data-title="Viaje">Viaje</th>
                             <th data-breakpoints="all" data-title="FArribo">FArribo</th>
-                            <th data-breakpoints="all" data-title="Buque">Buque</th>
                             <th data-breakpoints="all" data-title="NoIntegracion">NoIntegracion</th>
                             <th data-breakpoints="all" data-title="CveSeccion">CveSeccion</th>
                             <th data-breakpoints="all" data-title="Seccion">Seccion</th>
@@ -56,15 +57,19 @@
                             <th data-breakpoints="all" data-title="Liberado1">Liberado1</th>
                             <th data-breakpoints="all" data-title="Rojo2">Rojo2</th>
                             <th data-breakpoints="all" data-title="Liberado2">Liberado2</th>
-                            <th data-breakpoints="all" data-title="Liberado">Liberado</th>
                             <th data-breakpoints="all" data-title="Deposito">Deposito</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr *ngFor="let embarque of embarques" data-expanded="false">
                             <td><span class="label label-danger">{{embarque.pedimento}}</span></td>
-                            <td>{{embarque.Cliente}}</td>
+                            <td>{{embarque.Guia}}</td>
+                            <td>{{embarque.contenedor}}</td>
+                            <td>{{embarque.Viaje}}</td>
+                            <td>{{embarque.Buque}}</td>
+                            <td>{{embarque.Liberado}}</td>
                             <td>{{embarque.FechaTramite}}</td>
+                            <td>{{embarque.Cliente}}</td>
                             <td>{{embarque.TipoPedimento}}</td>
                             <td>{{embarque.Patente}}</td>
                             <td><span class="label label-danger">{{embarque.Year}}</span></td>
@@ -72,13 +77,9 @@
                             <td>{{embarque.CvePedimento}}</td>
                             <td>{{embarque.ImportExport}}</td>
                             <td>{{embarque.TipoCarga}}</td>
-                            <td>{{embarque.Guia}}</td>
-                            <td>{{embarque.contenedor}}</td>
                             <td>{{embarque.Sello}}</td>
                             <td>{{embarque.Observaciones}}</td>
-                            <td>{{embarque.Viaje}}</td>
                             <td>{{embarque.FArribo}}</td>
-                            <td>{{embarque.Buque}}</td>
                             <td>{{embarque.NoIntegracion}}</td>
                             <td>{{embarque.CveSeccion}}</td>
                             <td>{{embarque.seccion}}</td>
@@ -90,7 +91,6 @@
                             <td>{{embarque.Liberado1}}</td>
                             <td>{{embarque.Rojo2}}</td>
                             <td>{{embarque.Liberado2}}</td>
-                            <td>{{embarque.Liberado}}</td>
                             <td>{{embarque.Deposito}}</td>
                         </tr>
                     </tbody>

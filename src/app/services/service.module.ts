@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
+import { ModalContactoService } from '../components/modalcontacto/modalcontacto.service';
 
 import {
   SettingsService,
   SidebarService,
   SharedService,
   UsuarioService,
+  EmailService,
   SubirArchivoService,
   LoginGuardGuard,
   BoletinesService,
@@ -16,8 +18,6 @@ import {
   SubirPdfService,
   ScriptService
  } from './service.index';
-
-
 
 @NgModule({
   imports: [
@@ -29,10 +29,12 @@ import {
     SidebarService,
     SharedService,
     UsuarioService,
+    EmailService,
     SubirArchivoService,
     LoginGuardGuard,
     ModalUploadService,
     ModalUploadPDFService,
+    ModalContactoService,
     BoletinesService,
     EmbarquesService,
     SubirPdfService,

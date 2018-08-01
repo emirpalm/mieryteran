@@ -9,7 +9,7 @@ import { BoletinesService } from '../../services/service.index';
 })
 export class HomeComponent implements OnInit {
   boletines: Boletin[] = [];
-
+  anio: number = new Date().getFullYear() - 1934;
   constructor(public _boletinesService: BoletinesService) { }
 
   ngOnInit() {

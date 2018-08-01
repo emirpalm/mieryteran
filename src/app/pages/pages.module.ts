@@ -32,7 +32,8 @@ import { CommonModule } from '@angular/common';
 // NG-TRANSLATE
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
+import { ModalcontactoComponent } from '../components/modalcontacto/modalcontacto.component';
 
 @NgModule({
 declarations: [
@@ -45,7 +46,8 @@ declarations: [
     AsesoriaComponent,
     ImportacionesyexportacionesComponent,
     LogisticaComponent,
-    InformacionComponent
+    InformacionComponent,
+    ModalcontactoComponent
 
 ],
 exports: [
@@ -57,7 +59,8 @@ exports: [
     AsesoriaComponent,
     ImportacionesyexportacionesComponent,
     LogisticaComponent,
-    InformacionComponent
+    InformacionComponent,
+    ModalcontactoComponent
 
 ],
 imports: [

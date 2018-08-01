@@ -25,7 +25,7 @@ import { ServiceModule } from './services/service.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -40,6 +40,7 @@ import { environment } from '../environments/environment';
     DashboardModules,
     ServiceModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
 

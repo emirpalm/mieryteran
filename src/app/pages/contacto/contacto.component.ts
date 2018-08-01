@@ -1,3 +1,4 @@
+import { ModalContactoService } from '../../components/modalcontacto/modalcontacto.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactoComponent implements OnInit {
 
-    constructor() { }
+    constructor(public _modalContactoSevice: ModalContactoService) { }
 
  ngOnInit() {
  }
-
+ mostarModal() {
+  this._modalContactoSevice.mostrarModal();
+}
 }
