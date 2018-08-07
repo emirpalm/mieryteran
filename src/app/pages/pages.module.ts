@@ -34,6 +34,8 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
 import { ModalcontactoComponent } from '../components/modalcontacto/modalcontacto.component';
+import { RecaptchaDirective } from '../directives/recaptcha.directive';
+
 
 @NgModule({
 declarations: [
@@ -47,7 +49,8 @@ declarations: [
     ImportacionesyexportacionesComponent,
     LogisticaComponent,
     InformacionComponent,
-    ModalcontactoComponent
+    ModalcontactoComponent,
+    RecaptchaDirective
 
 ],
 exports: [
@@ -60,7 +63,8 @@ exports: [
     ImportacionesyexportacionesComponent,
     LogisticaComponent,
     InformacionComponent,
-    ModalcontactoComponent
+    ModalcontactoComponent,
+    RecaptchaDirective
 
 ],
 imports: [

@@ -4,8 +4,8 @@
         <div class="texto-encabezado text-xs-center">
 
             <div class="container">
-                <h1 class="display-4  wow bounceIn">Servicios</h1>
-                <p class="wow bounceIn" data-wow-delay=".3s">Experiencia en el manejo de todos los sectores y regimenes aduaneros.</p>
+                <h1 class="display-4  wow bounceIn">{{ 'servicios.titulo' | translate }}</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">{{ 'servicios.subtitulo' | translate }}</p>
 
             </div>
 
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-right">
-                    <a routerLink="/home">Inicio</a> » Servicios
+                    <a routerLink="/home">{{ 'menuheader.inicio' | translate }}</a> » {{ 'servicios.titulo' | translate }}
 
                 </div>
             </div>
@@ -30,12 +30,12 @@
                 <div class="col-md-3">
                     <article class="item-servicios">
                         <img src="assets/images/asesoria.svg" alt="Servicio Asesoria" class="rotar">
-                        <h3><b>Asesoría</b></h3>
+                        <h3><b>{{ 'servicios.asesoria' | translate }}</b></h3>
 
                         <p>
-                            Asesoría jurídica y de comercio exterior antes, durante y después del despacho.
+                            {{ 'servicios.dasesoria' | translate }}
                         </p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio1">Más información</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio1">{{ 'servicios.moreinfo' | translate }}</button>
 
                     </article>
                 </div>
@@ -44,11 +44,11 @@
                 <div class="col-md-3">
                     <article class="item-servicios">
                         <img src="assets/images/barco.svg" alt="Servicio Importaciones Y Exportaciones" class="rotar">
-                        <h3><b>Importaciones y Exportaciones</b></h3>
+                        <h3><b>{{ 'servicios.ie' | translate }}</b></h3>
                         <p>
-                            Recepción y reexpedición de embarques.
+                            {{ 'servicios.die' | translate }}
                         </p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio2">Más información</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio2">{{ 'servicios.moreinfo' | translate }}</button>
 
                     </article>
                 </div>
@@ -56,11 +56,11 @@
                 <div class="col-md-3">
                     <article class="item-servicios">
                         <img src="assets/images/logistica.svg" alt="Servicio Logística" class="rotar">
-                        <h3><b>Logística</b></h3>
+                        <h3><b>{{ 'servicios.logistica' | translate }}</b></h3>
                         <p>
-                            Coordinación de fletes internacionales.
+                            {{ 'servicios.dlogistica' | translate }}
                         </p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio3">Más información</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio3">{{ 'servicios.moreinfo' | translate }}</button>
 
                     </article>
                 </div>
@@ -68,12 +68,12 @@
                 <div class="col-md-3">
                     <article class="item-servicios">
                         <img src="assets/images/info.svg" alt="Servicio Información" class="rotar">
-                        <h3><b>Información Digital</b></h3>
+                        <h3><b>{{ 'servicios.idigital' | translate }}</b></h3>
 
                         <p>
-                            Informes completos de embarques, pedimentos y cuentas de gastos en línea.
+                            {{ 'servicios.didigital' | translate }}
                         </p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio4">Más información</button>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#servicio4">{{ 'servicios.moreinfo' | translate }}</button>
 
                     </article>
                 </div>

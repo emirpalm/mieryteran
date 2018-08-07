@@ -9,20 +9,33 @@
                     <h5 class="modal-title" style="color: rgb(255, 255, 255)"><b>CONTÁCTANOS</b></h5>
                 </div>
                 <div class="modal-body">
-                    <form ngNativeValidate #f="ngForm" (ngSubmit)="enviarEmail(f)" class="form-horizontal form-material">
+                    <!--<form ngNativeValidate #f="ngForm" (ngSubmit)="enviarEmail(f)" class="form-horizontal form-material">-->
+                    <form ngNativeValidate [formGroup]="contacto" (ngSubmit)="enviarEmail()" class="form-horizontal form-material">
                         <div class="form-group">
                             <div class="col-md-12 m-b-20">
-                                <input [(ngModel)]="email.nombre" name="nombre" type="text" class="form-control" placeholder="Tu nombre" required> </div>
+                                <input type="text" placeholder="nombre" formControlName="nombre" class="form-control" required>
+                            </div>
+                            <!--<input [(ngModel)]="email.nombre" name="nombre" type="text" class="form-control" placeholder="Tu nombre" required>-->
                             <div class="col-md-12 m-b-20">
-                                <input [(ngModel)]="email.asunto" name="asunto" type="text" class="form-control" placeholder="Asunto" required> </div>
+                                <input type="text" placeholder="asunto" formControlName="asunto" class="form-control" required>
+                            </div>
+                            <!--<input [(ngModel)]="email.asunto" name="asunto" type="text" class="form-control" placeholder="Asunto" required>-->
                             <div class="col-md-12 m-b-20">
-                                <input [(ngModel)]="email.email" name="email" type="email" class="form-control" placeholder="Tu correo" required> </div>
+                                <input type="email" placeholder="@example.com" formControlName="email" class="form-control" required>
+                            </div>
+                            <!--<input [(ngModel)]="email.email" name="email" type="email" class="form-control" placeholder="Tu correo" required>-->
                             <div class="col-md-12 m-b-20">
-                                <textarea [(ngModel)]="email.mensaje" name="mensaje" type="text" class="form-control" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea></div>
-
+                                <textarea type="text" placeholder="¿Cómo podemos ayudarte?" formControlName="mensaje" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <div appRecaptcha key="6LcioWgUAAAAAH_t_dISpkOxJAzPW6beEFSvtG0K" formControlName="captcha" required></div>
+                            <!--<textarea [(ngModel)]="email.mensaje" name="mensaje" type="text" class="form-control" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>-->
+                            <!--<div class="col-md-12 m-b-20">
+                                <div class="fileupload btn btn-danger btn-rounded waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Adjuntar Archivo</span>
+                                    <input type="file" class="upload"> </div>
+                            </div>-->
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" [disabled]="contacto.invalid" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
                 </div>

@@ -10,7 +10,7 @@ import { UsuarioService } from '../../services/service.index';
 export class ProfileComponent implements OnInit {
   usuario: Usuario;
   imagenSubir: File;
-  imagenTemp: string;
+  imagenTemp: any;
 
   constructor(public _usuarioService: UsuarioService) {
     this.usuario = this._usuarioService.usuario;

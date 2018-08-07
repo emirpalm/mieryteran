@@ -11,7 +11,7 @@ import { ViewChild } from '@angular/core';
 export class ModalUploadComponent implements OnInit {
 
   imagenSubir: File;
-  imagenTemp: string;
+  imagenTemp: any;
   @ViewChild( 'inputFile' ) inputFile: any;
 
   constructor(public _subirArchivoService: SubirArchivoService,

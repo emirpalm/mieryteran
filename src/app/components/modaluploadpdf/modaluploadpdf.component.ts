@@ -10,7 +10,7 @@ import { ViewChild } from '@angular/core';
 })
 export class ModaluploadpdfComponent implements OnInit {
   pdfSubir: File;
-  pdfTemp: string;
+  pdfTemp: any;
   @ViewChild( 'inputFile' ) inputFile: any;
 
   constructor(public _subirPDFService: SubirPdfService,
