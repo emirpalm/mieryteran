@@ -71,5 +71,17 @@
         "certificados": "Certificados",
         "tituloc": "Estamos certificados en ISO 9001:2015",
         "contenidoc": " Esta es una norma internacional, la cual se centra en todos los elementos de administración de calidad, con los que una empresa debe contar para tener un sistema efectivo que le permita administrar y mejorar la calidad de sus productos o servicios. Al seguir estos estándares, nos permite mejorar la capacidad de nuestras operaciones con el fin satisfacer las necesidades y cumplir expectativas de nuestros clientes, esto como garantía del alto nivel de servicio que brindamos, demostrando así que nuestra organización sigue los principios de gestión de calidad internacionalmente reconocidos mejorando continuamente nuestros procesos."
+    },
+    "contacto": {
+        "subtitulo": "Estamos listos para ayudarte",
+        "ubicacion": "Encuéntranos",
+        "progreso": "Oficinas Progreso",
+        "aeropuerto": "Oficinas Aeropuerto",
+        "calleprogreso": "Calle 27 No. 76, por 68 y 70 Col. Centro Puerto Progreso, Yucatán, México, C.P. 97320",
+        "calleaeropuerto": "Terminal de Carga Aérea del Aeropuerto Internacional de Mérida Locales 1 y 2 Mérida, Yucatán, México, C.P. 97288",
+        "btncontactanos": "Mandanos un mensaje",
+        "mailus": "Envianos un correo",
+        "raachus": "Llega a nosotros",
+        "reachusc": "<p>Utilice el formulario de contacto del lado derecho si tiene alguna pregunta o solicitud sobre nuestros servicios.</p><p>Responderemos a su mensaje dentro de las 24 horas.</p><p>A continuación, puede encontrar una hoja de ruta rápida para llegar a nuestras oficinas.</p>"
     }
 }

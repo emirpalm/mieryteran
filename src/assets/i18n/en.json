@@ -48,7 +48,7 @@
     },
     "footer": {
         "derechos": "All rights reserved",
-        "aviso": "Privacy notice",
+        "aviso": "Privacy Notice",
         "reporte": "Report a problem with the site"
     },
     "nosotros": {
@@ -71,6 +71,18 @@
         "certificados": "Certificates",
         "tituloc": "We are certified in ISO 9001:2015",
         "contenidoc": "This is an international standard, which focuses on all elements of quality management, with which a company must have to have an effective system that allows you to manage and improve the quality of your products or services. By following these standards, we can improve the capacity of our operations in order to meet the needs and meet the expectations of our customers, this as a guarantee of the high level of service we provide, demonstrating that our organization follows the principles of quality management internationally. recognized continually improving our processes."
+    },
+    "contacto": {
+        "subtitulo": "We are ready to help you",
+        "ubicacion": "Find Us",
+        "progreso": "Offices Progreso",
+        "aeropuerto": "Airport Offices",
+        "calleprogreso": "Street 27 No. 76, by 68 and 70 Col. Center Port Progress, Yucatán, México, C.P. 97320",
+        "calleaeropuerto": "Air Cargo Terminal of the Merida International Airport, local 1 and 2 Mérida, Yucatán, México, C.P. 97288",
+        "btncontactanos": "SEND US A MESSAGE",
+        "mailus": "Mail Us",
+        "raachus": "Reach Us",
+        "reachusc": "<p>Please use the contact form on the right side if you have any questions or request, concerning our services.</p><p>We will respond to your message within 24 hours.</p><p>Below you can find a quick roadmap to get to our office.</p>"
     }
 
 }

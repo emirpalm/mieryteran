@@ -4,8 +4,8 @@
         <div class="texto-encabezado text-xs-center">
 
             <div class="container">
-                <h1 class="display-4 wow bounceIn">Contacto</h1>
-                <p class="wow bounceIn" data-wow-delay=".3s">Estamos listos para ayudarte</p>
+                <h1 class="display-4 wow bounceIn">{{ 'menuheader.contacto' | translate }}</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">{{ 'contacto.subtitulo' | translate }}</p>
 
             </div>
 
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-xs-right">
-                    <a routerLink="/home">Inicio</a> » Contacto
+                    <a routerLink="/home">{{ 'menuheader.inicio' | translate }}</a> » {{ 'menuheader.contacto' | translate }}
 
                 </div>
             </div>
@@ -25,42 +25,50 @@
     <main class="p-y-1">
         <div class="container">
             <div class="row">
+                <div class="col-sm">
+                    <h2><b>{{ 'contacto.raachus' | translate }}</b></h2>
 
-                <div class="col-md-7">
-                    <h2><b>Donde nos ubicamos</b></h2>
-                    <h3>Oficina Progreso</h3>
-                    <p><a href="tel:+52(969) 935 00 42">(969) 935 00 42</a></p>
-                    <p>Calle 27 No. 76, por 68 y 70 Col. Centro Puerto Progreso, Yucatán, México, C.P. 97320</p>
+                    <b><p [innerHTML]="'contacto.reachusc' | translate"></p></b>
+
+                    <!--<h2><b>Directivos</b></h2>
+                            <p>
+                                <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> A.A. Bernardo Mier y Terán Gutiérrez</p>
+                            <p>
+                                <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> A.A. Pamela Mier y Terán Díaz</p>
+                            <p>
+                                <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> L.N.I. Gerardo Mier y Terán San Román</p>
+                            <h2><b>Operaciones</b></h2>
+                            <p>
+                                <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> LCI Cynthia Martín del Campo</p>
+                            <h2><b>Comercial</b></h2>
+                            <p>
+                                <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> LNRI Andrea Cocom Gamboa</p>-->
+                </div>
+
+                <div class="col-sm">
+                    <h2><b>{{ 'contacto.ubicacion' | translate }}</b></h2>
+                    <b>{{ 'contacto.progreso' | translate }}</b>
+                    <b><p><a href="tel:+52(969) 935 00 42">(969) 935 00 42</a></p></b>
+                    <b><p>{{ 'contacto.calleprogreso' | translate }}</p></b>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.705268251397!2d-89.61796168506848!3d20.964347986033296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5673b415555555%3A0x5fb141e375da5b22!2sAgencia+Aduanal+Mier+Y+Ter%C3%A1n!5e0!3m2!1ses-419!2smx!4v1498844229089"
-                        width="600" height="100" frameborder="0" style="border: 0px; pointer-events: auto;" allowfullscreen=""></iframe>
+                        width="400" height="100" frameborder="0" style="border: 0px; pointer-events: auto;" allowfullscreen=""></iframe>
 
-                    <h3>Oficina Aeropuerto</h3>
-                    <p><a href="tel:+52(999) 942 15 30">(999) 942 15 30</a></p>
-                    <p>Terminal de Carga Aérea del Aeropuerto Internacional de Mérida Locales 1 y 2 Mérida, Yucatán, México, C.P. 97288</p>
+                    <b>{{ 'contacto.aeropuerto' | translate }}</b>
+                    <b><p><a href="tel:+52(999) 942 15 30">(999) 942 15 30</a></p></b>
+                    <b><p>{{ 'contacto.calleaeropuerto' | translate }}</p></b>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.399841072644!2d-89.66595558549709!3d20.936452186048452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5672f7c6eab49d%3A0xb66772f533ecb6f7!2sAgencia+Aduanal+Mier+y+Ter%C3%A1n+Aeropuerto!5e0!3m2!1ses-419!2smx!4v1524936433871"
-                        width="600" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        width="400" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                 </div>
-                <div class="col-md-5">
-                    <button (click)="mostarModal()" type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#add-contact">Contáctanos</button>
+                <div class="col-sm">
+                    <h2><b>{{ 'contacto.mailus' | translate }}</b></h2>
+                    <button (click)="mostarModal()" type="button" class="btn btn-info btn-rounded" data-toggle="modal" data-target="#add-contact">{{ 'contacto.btncontactanos' | translate }}</button>
                     <!--<h1>Detalles de contacto</h1>-->
                     <h2><b>Atención a Clientes</b></h2>
-                    <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a>
-                    <h2><b>Directivos</b></h2>
                     <p>
-                        <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> A.A. Bernardo Mier y Terán Gutiérrez</p>
-                    <p>
-                        <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> A.A. Pamela Mier y Terán Díaz</p>
-                    <p>
-                        <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> L.N.I. Gerardo Mier y Terán San Román</p>
-                    <h2><b>Operaciones</b></h2>
-                    <p>
-                        <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> LCI Cynthia Martín del Campo</p>
-                    <h2><b>Comercial</b></h2>
-                    <p>
-                        <a style="font-size:2em; color:Tomato" class="fas fa-envelope" href="mailto:atencionclientes@mieryteran.com.mx"></a> LNRI Andrea Cocom Gamboa</p>
-                </div>
-                <div class="col-md-7">
+                        <a style="font-size:1.5em; color:Tomato" class="fas fa-envelope"></a>
+                        <a href="mailto:atencionclientes@mieryteran.com.mx"> <b> atencionclientes@mieryteran.com.mx</b></a>
+                    </p>
                 </div>
                 <div class="col-md-5">
                 </div>
