@@ -1,12 +1,14 @@
-<div class="container">
-    <p>{{anio}} © MIER y TERÁN {{ 'footer.derechos' | translate }}</p>
-    <ul class="redes-sociales">
-        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"> </i>  </a></li>
-        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i> </a></li>
-        <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i> </a></li>
-    </ul>
-    <div class="col-sm-12">
-        {{ 'home.titulo' | translate }} | <a href="assets/aviso_de_privacidad/Aviso_de_privacidad.pdf" style="color: rgb(167, 166, 166)" target="_blank">{{ 'footer.aviso' | translate }}</a> | <a href="https://github.com/emirpalm/mieryteran/issues" style="color: rgb(167, 166, 166)"
-            target="_blank">{{ 'footer.reporte' | translate }}</a>
+<footer class="piedepagina p-y-1" role="contentinfo">
+    <div class="container">
+        <p>{{anio}} © MIER y TERÁN {{ 'footer.derechos' | translate }}</p>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/Mier-y-Ter%C3%A1n-Agencia-Aduanal-191675187709928/"><i class="fab fa-facebook" aria-hidden="true"> </i>  </a></li>
+            <li><a href="https://twitter.com/aamieryteran"><i class="fab fa-twitter" aria-hidden="true"></i> </a></li>
+            <!--<li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i> </a></li>-->
+        </ul>
+        <div class="col-sm-12 links-footer">
+            <label>{{ 'home.titulo' | translate }}</label> |
+            <a routerLink="/aviso-privacidad" style="color: rgb(167, 166, 166)">{{ 'footer.aviso' | translate }}</a> | <a href="https://github.com/emirpalm/mieryteran/issues" style="color: rgb(167, 166, 166)" target="_blank">{{ 'footer.reporte' | translate }}</a>
+        </div>
     </div>
-</div>
+</footer>

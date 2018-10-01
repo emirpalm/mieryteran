@@ -12,6 +12,7 @@ import { ImportacionesyexportacionesComponent } from './paginas-servicios/import
 import { LogisticaComponent } from './paginas-servicios/logistica/logistica.component';
 import { AsesoriaComponent } from './paginas-servicios/asesoria/asesoria.component';
 import { InformacionComponent } from './paginas-servicios/informacion/informacion.component';
+import { PrivacynoticeComponent } from './privacynotice/privacynotice.component';
 
 
 
@@ -24,7 +25,7 @@ const pagesRoutes: Routes = [
         {path: 'nosotros', component: NosotrosComponent},
         {path: 'servicios', component: ServiciosComponent},
         {path: 'contacto', component: ContactoComponent},
-        {path: 'bolsatrabajo', component: BolsatrabajoComponent},
+        {path: 'aviso-privacidad', component: PrivacynoticeComponent},
         {path: 'asesoria', component: AsesoriaComponent},
         {path: 'importacionesyexportaciones', component: ImportacionesyexportacionesComponent},
         {path: 'logistica', component: LogisticaComponent},

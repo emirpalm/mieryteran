@@ -91,13 +91,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h3 class="modal-title" style="color: rgb(255, 255, 255)"><b>Asesoría</b></h3>
+                    <h3 class="modal-title" style="color: rgb(255, 255, 255)"><b>{{ 'servicios.asesoria' | translate }}</b></h3>
                 </div>
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-md-8">
-                            Atención personalizada con ejecutivos certificados.
+                            <p [innerHTML]="'servicios.masesoria' | translate"></p>
                         </div>
 
                         <div class="col-md-4">
@@ -122,16 +122,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h3 class="modal-title" style="color: rgb(255, 255, 255)"><b>Importaciones y exportaciones</b></h3>
+                    <h3 class="modal-title" style="color: rgb(255, 255, 255)"><b>{{ 'servicios.ie' | translate }}</b></h3>
                 </div>
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-md-8">
-                            <p>Trámites ante VUCEM para generar COVES y los e-documents necesarios para el embarque.</p>
-                            <p>Despachos aduanales de maquinaria y equipo; incluso de grandes dimensiones.</p>
-                            <p>Especialistas en despachos de mercancía a granel, Importación y exportación de productos perecederos.</p>
-
+                            <p [innerHTML]="'servicios.mie' | translate"></p>
                         </div>
 
                         <div class="col-md-4">
@@ -156,16 +153,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title" style="color: rgb(255, 255, 255)"><b>Logística</b></h4>
+                    <h4 class="modal-title" style="color: rgb(255, 255, 255)"><b>{{ 'servicios.logistica' | translate }}</b></h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-md-8">
-                            <p>Consolidación de carga.</p>
-                            <p>Servicio puerta a puerta.</p>
-                            <p>Coordinación de fletes terrestres nacionales.</p>
-                            <p>Almacenamiento y distribución.</p>
+                            <p>
+                                {{ 'servicios.mlogistica' | translate }}
+                            </p>
                         </div>
 
                         <div class="col-md-4">
@@ -188,14 +184,13 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    <h4 class="modal-title" style="color: rgb(255, 255, 255)"><b>Información Digital</b></h4>
+                    <h4 class="modal-title" style="color: rgb(255, 255, 255)"><b>{{ 'servicios.idigital' | translate }}</b></h4>
                 </div>
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-md-8">
-                            <p>Entrega de expediente aduanal.</p>
-                            <p>Reportes personalizados.</p>
+                            <p [innerHTML]="'servicios.midigital' | translate"></p>
                         </div>
 
                         <div class="col-md-4">

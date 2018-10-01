@@ -1,0 +1,53 @@
+<body class="paginas-internas">
+    <section class="bienvenidos">
+
+        <div class="texto-encabezado text-xs-center">
+
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">{{ 'privacidad.titulo' | translate }}</h1>
+                <p class="wow bounceIn" data-wow-delay=".3s">{{ 'privacidad.subtitulo' | translate }}</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="ruta p-y-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-xs-right">
+                    <a routerLink="/home">{{ 'menuheader.inicio' | translate }}</a> » {{ 'privacidad.titulo' | translate }}
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="p-y-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2><b>{{ 'privacidad.quees?' | translate }}</b></h2>
+
+                    <p [innerHTML]="'privacidad.texto' | translate"></p>
+
+                </div>
+
+                <div class="col-sm-8">
+                    <h2><b>{{ 'privacidad.titulo' | translate }}</b></h2>
+
+                    <p [innerHTML]="'privacidad.contenido' | translate"></p>
+                    <p [innerHTML]="'privacidad.contenido2' | translate"></p>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>

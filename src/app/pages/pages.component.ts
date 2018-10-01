@@ -14,7 +14,7 @@ export class PagesComponent implements OnInit {
   private yScrollStack: number[] = [];
 
   constructor(private router: Router, private location: Location, private translate: TranslateService) {
-      translate.setDefaultLang('en');
+      translate.setDefaultLang('es');
    }
 
   ngOnInit() {

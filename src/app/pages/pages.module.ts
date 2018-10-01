@@ -23,6 +23,7 @@ import { ImportacionesyexportacionesComponent } from './paginas-servicios/import
 import { LogisticaComponent } from './paginas-servicios/logistica/logistica.component';
 import { AsesoriaComponent } from './paginas-servicios/asesoria/asesoria.component';
 import { InformacionComponent } from './paginas-servicios/informacion/informacion.component';
+import { PrivacynoticeComponent } from './privacynotice/privacynotice.component';
 // fin paginas internas servicios
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -50,7 +51,8 @@ declarations: [
     LogisticaComponent,
     InformacionComponent,
     ModalcontactoComponent,
-    RecaptchaDirective
+    RecaptchaDirective,
+    PrivacynoticeComponent
 
 ],
 exports: [
@@ -64,7 +66,8 @@ exports: [
     LogisticaComponent,
     InformacionComponent,
     ModalcontactoComponent,
-    RecaptchaDirective
+    RecaptchaDirective,
+    PrivacynoticeComponent
 
 ],
 imports: [

@@ -18,17 +18,18 @@
         <div style="font-size:2em; color:tomato" class="boton-key">
             <i class="fas fa-globe"></i>
         </div>
-        <button routerLinkActive="active" type="button" (click)="useLanguage('en')" class="active boton-key boton btn-primary btn-sm">en-US</button>
-        <button routerLinkActive="active" type="button" (click)="useLanguage('es')" class="boton-key boton btn-primary btn-sm">es-MX</button>
+        <button type="button" (click)="useLanguage('es')" class="boton-key boton btn-sm"><img src="assets/i18n/es.png" alt="mexico"></button>
+
+        <button type="button" (click)="useLanguage('en')" class="boton-key boton btn-sm"><img src="assets/i18n/en.png" alt="usa"></button>
         <!--========Fin Botones======== -->
 
         <!--========menu de navegacion======== -->
         <nav id="menu-principal" class="collapse">
             <ul>
-                <li><a class="fas fa-home fa-lg" routerLinkActive="active" routerLink="/home"> {{ 'menuheader.inicio' | translate }}</a></li>
-                <li><a class="fas fa-user fa-lg" routerLinkActive="active" routerLink="/nosotros"> {{ 'menuheader.nosotros' | translate }}</a></li>
-                <li><a class="fas fa-clipboard-list fa-lg" routerLinkActive="active" routerLink="/servicios"> {{ 'menuheader.servicios' | translate }}</a></li>
-                <li><a class="fas fa-envelope fa-lg" routerLinkActive="active" routerLink="/contacto"> {{ 'menuheader.contacto' | translate }}</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="fas fa-home fa-lg" routerLink="/home"> {{ 'menuheader.inicio' | translate }}</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="fas fa-user fa-lg" routerLink="/nosotros"> {{ 'menuheader.nosotros' | translate }}</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="fas fa-clipboard-list fa-lg" routerLink="/servicios"> {{ 'menuheader.servicios' | translate }}</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="fas fa-envelope fa-lg" routerLink="/contacto"> {{ 'menuheader.contacto' | translate }}</a></li>
                 <!-- <li><a class="fas fa-users fa-lg" routerLinkActive="active" routerLink="/bolsatrabajo"> Bolsa De Trabajo</a></li>-->
 
             </ul>
