@@ -2,6 +2,8 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, forwardRef, Inject, Injectable, InjectionToken, Injector, Input, NgZone, OnInit, Output } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgControl, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { map, catchError} from 'rxjs/operators';
 
 declare const grecaptcha: any;
 
@@ -23,13 +25,14 @@ class ReCaptchaAsyncValidator {
   validateToken( token: string ) {
     return ( _: AbstractControl ) => {
       return this.http.get(this.url, { params: { token } })
-      .map((res: any) => {
+      .pipe(
+      map((res: any) => {
         if ( !res.success ) {
           return { tokenIvalid: true };
         }
         console.log(res);
         return null;
-      });
+      }));
     };
   }
 }

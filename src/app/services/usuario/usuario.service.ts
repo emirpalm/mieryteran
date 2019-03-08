@@ -5,6 +5,9 @@ import { URL_SERVICIOS } from '../../config/config';
 import { Router } from '@angular/router';
 import { SubirArchivoService } from '../subirArchivo/subir-archivo.service';
 import { arch } from 'os';
+import swal from 'sweetalert';
+import { Observable, throwError } from 'rxjs';
+import { map, catchError} from 'rxjs/operators';
 
 @Injectable()
 export class UsuarioService {
@@ -61,13 +64,14 @@ export class UsuarioService {
      // tslint:disable-next-line:prefer-const
      let url = URL_SERVICIOS + '/login';
      return this.http.post(url, usuario)
-     .map((resp: any) => {
+     .pipe(
+     map((resp: any) => {
       this.guardarStorage( resp.id, resp.token, resp.usuario );
       // localStorage.setItem('id', resp.id);
       // localStorage.setItem('token', resp.token);
       // localStorage.setItem('usuario', JSON.stringify(resp.usuario));
        return true;
-     });
+     }));
 
   }
 
@@ -75,11 +79,12 @@ export class UsuarioService {
      // tslint:disable-next-line:prefer-const
      let url = URL_SERVICIOS + '/usuario';
      return this.http.post(url, usuario)
-     .map((resp: any) => {
+     .pipe(
+     map((resp: any) => {
       swal('Usuario Creado!', usuario.email , 'success');
        return resp.usuario;
 
-     });
+     }));
 
    }
 
@@ -89,7 +94,8 @@ export class UsuarioService {
      url += '?token=' + this.token;
 
      return this.http.put(url, usuario)
-     .map((resp: any) => {
+     .pipe(
+     map((resp: any) => {
        if (usuario._id === this.usuario._id) {
           // tslint:disable-next-line:prefer-const
           let usuarioDB: Usuario = resp.usuario;
@@ -97,7 +103,7 @@ export class UsuarioService {
        }
        swal('Datos Actuzalizados!', usuario.nombre , 'success');
        return true;
-     });
+     }));
    }
 
    cambiarImagen(archivo: File, id: string) {
@@ -123,16 +129,18 @@ export class UsuarioService {
     // tslint:disable-next-line:prefer-const
     let url = URL_SERVICIOS + '/busqueda/collection/usuarios/' + termino;
     return this.http.get(url)
-    .map((resp: any) => resp.usuarios);
+    .pipe(
+     map((resp: any) => resp.usuarios));
   }
 
   borrarUsuario(id: string) {
     let url = URL_SERVICIOS + '/usuario/' + id;
     url += '?token=' + this.token;
     return this.http.delete(url)
-    .map(resp => {
+    .pipe(
+    map(resp => {
       swal('Usuario borrado!', 'El usuario a sido borrado correctamente' , 'success');
       return true;
-    });
+    }));
   }
 }

@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../../config/config';
 import { UsuarioService } from '../usuario/usuario.service';
 import { Embarque } from '../../models/embarques.model';
+import { Observable, throwError } from 'rxjs';
+import { map, catchError} from 'rxjs/operators';
 
 @Injectable()
 export class EmbarquesService {
@@ -24,7 +26,8 @@ export class EmbarquesService {
         // tslint:disable-next-line:prefer-const
         let url = URL_SERVICIOS + '/busqueda/collection/embarques/' + termino;
         return this.http.get(url)
-        .map((resp: any) => resp.embarques);
+        .pipe(
+        map((resp: any) => resp.embarques));
       }
 
 

@@ -21,7 +21,7 @@ const dashboardRoutes: Routes = [
     {path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Configuración'}},
     {path: 'profile', component: ProfileComponent, data: {titulo: 'Mi perfil'}},
     {path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'}},
-    {path: 'rxjs', component: RxjsComponent, data: {titulo: 'RXJS'}},
+    // {path: 'rxjs', component: RxjsComponent, data: {titulo: 'RXJS'}},
     // Mantenimientos
     {path: 'usuarios', component: UsuariosComponent, data: {titulo: 'Mantenimiento de usuarios'}},
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},

@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { URL_SERVICIOS } from '../../config/config';
 import { UsuarioService } from '../usuario/usuario.service';
 import { Boletin } from '../../models/boletines.models';
+import { Observable, throwError } from 'rxjs';
+import { map, catchError} from 'rxjs/operators';
 
 @Injectable()
 export class BoletinesService {
@@ -20,17 +22,19 @@ export class BoletinesService {
         let url = URL_SERVICIOS + '/boletin';
 
         return this.http.get(url)
-        .map((resp: any) => {
+        .pipe(
+        map((resp: any) => {
             this.totalBoletines = resp.total;
             return resp.boletines;
-        });
+        }));
     }
 
     buscarBoletines(termino: string) {
         // tslint:disable-next-line:prefer-const
         let url = URL_SERVICIOS + '/busqueda/collection/boletines/' + termino;
         return this.http.get(url)
-        .map((resp: any) => resp.boletines);
+        .pipe(
+        map((resp: any) => resp.boletines));
       }
 
     borrarBoletin(id: string) {
@@ -39,10 +43,11 @@ export class BoletinesService {
         url += '?token=' + this._usuarioService.token;
 
         return this.http.delete(url)
-        .map(resp => {
+        .pipe(
+        map(resp => {
             swal('Boletin Borrado', 'Boletin Borrado Correctamente', 'success');
             return resp;
-        });
+        }));
     }
 
     guardarBoletin(boletin: Boletin) {
@@ -51,10 +56,11 @@ export class BoletinesService {
         url += '?token=' + this._usuarioService.token;
 
         return this.http.post(url, boletin)
-        .map((resp: any) => {
+        .pipe(
+        map((resp: any) => {
             swal('Boletin Creado', 'Boletin Creado Correctamente', 'success');
             return resp.boletin;
-        });
+        }));
     }
 
 }

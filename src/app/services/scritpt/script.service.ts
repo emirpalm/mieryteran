@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {ScriptStore} from './script.store';
-import { Observable } from 'rxjs/Observable';
-import { Observer } from 'rxjs/Observer';
+import { Observable, throwError } from 'rxjs';
+import { map, catchError} from 'rxjs/operators';
 
 declare var document: any;
 
